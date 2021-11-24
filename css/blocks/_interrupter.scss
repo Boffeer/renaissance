@@ -1,0 +1,18 @@
+.interrupter {
+	// margin-top: -100px;
+	background-color: var(--c-bg-secondary);
+	padding-top: 100px;
+	padding-bottom: 90px;
+}
+.interrupter__inner {
+	padding-left: 60px;
+}
+.interrupter__title {
+	font-size: var(--fz-h3);
+	color: var(--c-text-second);
+	margin-bottom: 16px;
+	text-transform: uppercase;
+}
+.interrupter__slogan {
+	font-size: 32px;
+}

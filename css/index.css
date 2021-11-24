@@ -188,6 +188,24 @@ body {
   margin-right: auto;
 }
 
+.has-pointer {
+  position: relative;
+}
+
+.has-pointer::before {
+  content: "";
+  position: absolute;
+  left: -2.3em;
+  top: -0.25em;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/styling/triangle-pointer.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .buttons-set {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,7 +316,7 @@ body {
 }
 
 .hero-clients {
-  margin-bottom: 220px;
+  margin-bottom: 80px;
   font-size: var(--fz-h3-card);
 }
 
@@ -321,5 +339,26 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.interrupter {
+  background-color: var(--c-bg-secondary);
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+
+.interrupter__inner {
+  padding-left: 60px;
+}
+
+.interrupter__title {
+  font-size: var(--fz-h3);
+  color: var(--c-text-second);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.interrupter__slogan {
+  font-size: 32px;
 }
 /*# sourceMappingURL=index.css.map */

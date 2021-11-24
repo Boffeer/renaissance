@@ -185,6 +185,23 @@ body {
 	margin-right: auto;
 }
 
+.has-pointer {
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: -2.3em;
+    top: -0.25em;
+		display: block;
+		width: 40px;
+		height: 40px;
+		background-image: url("../img/styling/triangle-pointer.svg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
 
 // _CONTROLS
 .buttons-set {
@@ -230,4 +247,5 @@ body {
 
 @import "blocks/header";
 @import "blocks/hero";
+@import "blocks/interrupter";
 @import "blocks/footer";
