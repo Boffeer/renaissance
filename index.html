@@ -36,7 +36,7 @@
 				</div>
 				<nav class="header-nav">
 					<div class="header-nav-dropdown">
-						<button class="header-nav__name">Продукты</button>
+						<button type="button" class="header-nav__name">Продукты</button>
 						<ul class="header-nav-links">
 							<li class="header-nav-links-item">
 								<a href="#href-target" class="header-nav-links-item__link">Целевые накопления</a>
@@ -65,13 +65,14 @@
 				<a href="tel:+78003332981" class="header__phone">8 (800) 333-2-981</a>
 			</div>
 		</header>
+
 		<section class="hero">
-			<div class="container">
-				<div class="hero__inner">
-					<h1 class="hero__title">Обеспечьте надежное будущее для себя и своих близких</h1>
-					<div class="hero-buttons">
-						<a href="#href-services" class="button button-primary">Выбрать продукт</a>
-						<a href="#href-chat" class="button button-primary">
+			<div class="container container--hero">
+				<div class="hero-offer">
+					<h1 class="hero-offer__title">Обеспечьте надежное будущее для себя и своих близких</h1>
+					<div class="buttons-set hero__buttons-set">
+						<a href="#href-services" class="button button--primary">Выбрать продукт</a>
+						<a href="#href-chat" class="button button--secondary">
 							<img src="./img/icons/icon-chat.svg" alt="Online-чат" class="button__icon">
 							<span class="button__text">Online-чат</span>
 						</a>
@@ -161,7 +162,7 @@
 										<div class="input-icons">
 										</div>
 									</label>
-									<button class="button button-primary services-list-card__button">Рассчитать доходность</button>
+									<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
 								</div>
 							</div>
 						</article>
@@ -188,7 +189,7 @@
 
 										</div>
 									</label>
-									<button class="button button-primary services-list-card__button">Посмотреть прогноз</button>
+									<button class="button button--primary services-list-card__button">Посмотреть прогноз</button>
 								</div>
 							</div>
 						</article>
@@ -209,7 +210,7 @@
 
 										</div>
 									</label>
-									<button class="button button-primary services-list-card__button">Рассчитать доходность</button>
+									<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
 								</div>
 							</div>
 						</article>
@@ -230,7 +231,7 @@
 
 										</div>
 									</label>
-									<button class="button button-primary services-list-card__button">Рассчитать доходность</button>
+									<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
 								</div>
 							</div>
 						</article>
@@ -251,7 +252,7 @@
 
 										</div>
 									</label>
-									<button class="button button-primary services-list-card__button">Рассчитать доходность</button>
+									<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
 								</div>
 							</div>
 						</article>
@@ -272,7 +273,7 @@
 
 										</div>
 									</label>
-									<button class="button button-primary services-list-card__button">Рассчитать доходность</button>
+									<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
 								</div>
 							</div>
 						</article>
@@ -289,7 +290,7 @@
 					<div class="help__inner">
 						<h2 class="help__title">Нужна помощь с выбором продукта?</h2>
 						<p class="help__desc">Свяжитесь с нашим онлайн-консультантом</p>
-						<a href="#href-chat" class="button button-primary help__button">
+						<a href="#href-chat" class="button button--primary help__button">
 							<img src="" alt="" class="button__icon">
 							<span class="button__text">Перейти в online-чат</span>
 						</a>
@@ -377,7 +378,7 @@
 						<div class="input__wrapper input--bordered">
 							<input type="text" placeholder="Введите ваш email" class="input input--email">
 						</div>
-						<button class="button button-primary newsletter__submit">Подписаться</button>
+						<button class="button button--primary newsletter__submit">Подписаться</button>
 					</form>
 					<p class="newsletter-form__privacy">
 						Отправляя форму, вы соглашаетесь с условиями
@@ -396,11 +397,12 @@
 					<a href="#href-current-url" class="footer-branding-logo">
 						<img src="./img/icons/logo.svg" alt="#href-current-url" class="footer-branding-logo__img">
 					</a>
-					<button class="footer__button js_button-scroll-top">
+					<button title="Наверх" type="button" class="footer__button js_button-scroll-top" aria-label="Пролистат до верха сайта">
+						<span class="footer__button--tooltip">Наверх</span>
 						<svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M-3.10351e-07 5.9L3.52 5.9L3.52 13L5.5 13L5.5 5.9L9.04 5.9L4.52 0.579999L-3.10351e-07 5.9Z" fill="white"/>
-							</svg>
-						</button>
+						</svg>
+					</button>
 				</div>
 				<div class="footer-about">
 					<p class="footer-about__slogan">

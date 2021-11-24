@@ -4,11 +4,12 @@
   "description": "[jQuery]()\r [jquery.fancybox]()\r [normalize]()\r [modality]()\r [jquery.inputmask]()\r [timer.jquery]()\r [aos]()\r [Owl]()",
   "main": "index.js",
   "dependencies": {
+    "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
-    "stylelint-scss": "^3.20.1",
-    "stylelint-order": "^4.1.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.4.0",
-    "stylelint": "^13.13.1"
+    "stylelint-no-unsupported-browser-features": "^5.0.2",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.20.1"
   },
   "devDependencies": {
     "html-validate": "^5.5.0"
