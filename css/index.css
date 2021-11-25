@@ -869,10 +869,6 @@ body {
   width: 100%;
 }
 
-.articles {
-  margin-bottom: 60px;
-}
-
 .articles__inner {
   display: -ms-grid;
   display: grid;

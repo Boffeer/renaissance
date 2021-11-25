@@ -260,6 +260,7 @@ body {
 	background-color: var(--c-ghost);
 }
 .button--arrowed {
+.button--arrowed {
 	width: 66px;
 	height: 66px;
 	font-size: 0;
@@ -392,3 +393,4 @@ body {
 @import "blocks/explainer";
 @import "blocks/bullets";
 @import "blocks/steps";
+@import "blocks/programms";
