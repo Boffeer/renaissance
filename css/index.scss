@@ -219,8 +219,15 @@ body {
 	font-size: var(--fz-h2);
 	margin-bottom: 68px;
 }
+.section__desc {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.6;
+	color: var(--c-text-p);
+}
 
 // _CONTROLS
+.buttons__container,
 .buttons-set {
 	display: flex;
 	align-items: center;
@@ -228,6 +235,11 @@ body {
 		margin-right: 12px;
 	}
 }
+
+.buttons__container--right {
+	justify-content: flex-end;
+}
+
 .button {
 	--fz-button: var(var(--fz-regular));
 
@@ -397,3 +409,4 @@ body {
 @import "blocks/bullets";
 @import "blocks/steps";
 @import "blocks/programms";
+@import "blocks/conditions";

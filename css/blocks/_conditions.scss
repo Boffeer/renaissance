@@ -1,0 +1,39 @@
+.conditoins {
+	padding-top: 70px;
+	padding-bottom: 34px;
+}
+.conditions__title {
+	margin-bottom: 24px;
+}
+.conditions__desc {
+	max-width: 676px;
+	margin-bottom: 50px;
+}
+
+.conditions-table {
+	border-top: 1px solid #C5D0E0;
+	margin-bottom: 70px;
+}
+
+.conditoins-table-row {
+	border-bottom: 1px solid #C5D0E0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.conditions-table-row__heading {
+	max-width: 274px;
+	width: 100%;
+	margin-right: 40px;
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--c-text-second);
+}
+
+.conditions-table-row__desc {
+	font-weight: normal;
+	font-size: 16px;
+	color: var(--c-text-regular);
+}
