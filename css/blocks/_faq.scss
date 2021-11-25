@@ -22,23 +22,30 @@
 	padding: 32px 37px;
 	background-color: #f7f8fc;
 	position: relative;
+	cursor: pointer;
 }
 
 .faq-cards-card-question__title {
 	font-size: 18px;
 	max-width: calc(100% - 70px);
 	width: 100%;
+	pointer-events: none;
 }
 .faq-cards-card-question__closer {
 	font-weight: 400;
 	font-size: 54px;
 	line-height: 0.3;
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	right: 36px;
 	line-height: 0.3;
-	// transform: translateY(-50%) rotate(45deg);
+	transition: 0.3s all;
 	transform: translateY(-50%);
+	transform-origin: center center;
+	pointer-events: none;
+}
+.opened .faq-cards-card-question__closer {
+	transform: translateY(-50%) rotate(45deg);
 }
 
 .faq-cards-card-answer {
@@ -46,4 +53,5 @@
 	padding-right: 32px;
 	padding-bottom: 32px;
 	background-color: #f7f8fc;
+	transition: 0.4s all;
 }
