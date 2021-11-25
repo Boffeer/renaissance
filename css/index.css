@@ -1558,7 +1558,7 @@ body {
   color: var(--c-text-regular);
 }
 
-.conditoins {
+.conditions {
   padding-top: 70px;
   padding-bottom: 34px;
 }
@@ -1602,5 +1602,67 @@ body {
   font-weight: normal;
   font-size: 16px;
   color: var(--c-text-regular);
+}
+
+.faq {
+  padding-top: 34px;
+  margin-bottom: 80px;
+}
+
+.container--faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.faq__title {
+  margin-bottom: 32px;
+}
+
+.faq-cards-card {
+  margin-bottom: 16px;
+}
+
+.faq-cards-card-question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 32px 37px;
+  background-color: #f7f8fc;
+  position: relative;
+}
+
+.faq-cards-card-question__title {
+  font-size: 18px;
+  max-width: calc(100% - 70px);
+  width: 100%;
+}
+
+.faq-cards-card-question__closer {
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 0.3;
+  position: absolute;
+  top: 50%;
+  right: 36px;
+  line-height: 0.3;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.faq-cards-card-answer {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  background-color: #f7f8fc;
 }
 /*# sourceMappingURL=index.css.map */
