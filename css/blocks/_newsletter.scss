@@ -32,16 +32,13 @@
 	max-width: 785px;
 }
 
-.input__wrapper {
+.input__wrapper--newsletter {
+	margin-bottom: 0;
+	cursor: text;
 	max-width: 622px;
 	width: 100%;
 	padding-top: 19px;
 	padding-bottom: 19px;
-}
-
-.input__wrapper--newsletter {
-	margin-bottom: 0;
-	cursor: text;
 }
 
 .newsletter-form__privacy {
