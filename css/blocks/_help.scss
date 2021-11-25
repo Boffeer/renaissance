@@ -1,0 +1,27 @@
+.help__wrap {
+	padding-left: 85px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.help__title {
+	margin-bottom: 16px;
+}
+
+.help__title::before {
+	top: 0;
+}
+
+.help__desc {
+	color: #4c5d75;
+	margin-bottom: 24px;
+}
+
+.help-imgs {
+	max-width: 343px;
+	width: 100%x;
+}
+.help-imgs__img {
+	width: 100%;
+}

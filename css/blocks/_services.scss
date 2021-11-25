@@ -60,6 +60,7 @@
 .services-list-card--back {
 	position: absolute;
 	opacity: 0;
+	pointer-events: none;
 }
 
 .services-list-card.flipped {
