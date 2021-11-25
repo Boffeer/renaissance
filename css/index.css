@@ -433,6 +433,10 @@ body {
   color: var(--c-text-p);
 }
 
+.page-programm {
+  --fz-h2: 42px;
+}
+
 .header {
   z-index: calc(var(--z-popup) - 1);
   position: absolute;
@@ -1305,8 +1309,31 @@ body {
      object-fit: contain;
 }
 
+.explainer {
+  margin-bottom: 65px;
+}
+
 .explainer__title {
   margin-bottom: 24px;
+}
+
+.explainer-tldr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.explainer-tldr__desc {
+  max-width: 561px;
+}
+
+.explainer-tldr__desc--big {
+  max-width: 610px;
+  font-size: 22px;
+  color: var(--c-text-regular);
 }
 
 .bullets {
