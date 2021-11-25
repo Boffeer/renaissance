@@ -1464,4 +1464,82 @@ body {
      object-fit: cover;
   background-color: rgba(234, 234, 234, 0.4);
 }
+
+.programms {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+.programms__title {
+  margin-bottom: 62px;
+}
+
+.programms-table__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 375px 174px 111px 200px 210px;
+      grid-template-columns: 375px 174px 111px 200px 210px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.programms-table__body .programms-table__row {
+  background-color: rgba(240, 242, 247, 0.45);
+  padding: 24px 32px;
+}
+
+.programms-table-heading__desc {
+  font-size: 14px;
+}
+
+.programms-table__head-name {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--c-text-p);
+  margin-bottom: 30px;
+}
+
+.programms-table__head .programms-table__row {
+  margin-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.programms-table-heading__title {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: var(--c-text-regular);
+}
+
+.programms-table-cell__number {
+  color: var(--c-text-regular);
+}
+
+.programms-table-cell__type-name {
+  margin-right: 4px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.programms-table-cell__type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.programms-table-cell__number--no-desc {
+  font-size: 18px;
+  color: var(--c-text-regular);
+}
 /*# sourceMappingURL=index.css.map */
