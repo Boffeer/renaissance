@@ -1,8 +1,8 @@
 let lazyLoadInstance = new LazyLoad();
 
 let servicesMasonry = new Masonry( '.services-list', {
-  itemSelector: '.services-list-card',
-  columnWidth: '.services-list-card',
+	itemSelector: '.services-list-card',
+	columnWidth: '.services-list-card',
 	gutter: '.services-list-card--gutter',
 });
 
@@ -57,6 +57,13 @@ servicesCards.forEach(card => {
 		});
 	})
 
+})
+
+
+let articlesMasonry = new Masonry('.articles-list', {
+	itemSelector: '.articles-list-article',
+	columnWidth: '.articles-list-article',
+	gutter: '.articles-list-article--gutter',
 })
 
   /**

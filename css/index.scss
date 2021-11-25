@@ -42,6 +42,7 @@
 	--c-primary--hover: #e9ed24;
 	--c-secondary: #50287d;
 	--c-secondary-darker: #4a2c78;
+	--c-text-p: #4c5d75;
 	--c-ghost: #c5d0e0;
 	--c-text-regular: #111827;
 	--c-text-second: #6c7a96;
@@ -122,20 +123,30 @@ h1 {
 	line-height: 1.11;
 }
 h2 {
+	font-weight: 600;
 	font-size: var(--fz-h2);
 	line-height: 1.11;
 }
 h3 {
+	font-weight: 600;
 	font-size: var(--fz-h3);
 	line-height: 1.11;
 }
 h4 {
+	font-weight: 600;
 	font-size: var(--fz-h4);
 	line-height: 1.11;
 }
 ul,
 ol {
 	list-style: none;
+}
+a,
+p {
+	color: #4c5d75;
+}
+img {
+	max-width: 100%;
 }
 body {
 	font-family: "Gerbera", "Arial", "Helvetica", sans-serif;
@@ -229,6 +240,7 @@ body {
 	font-size: var(--fz-button);
 	line-height: 1.5;
 	transition: 0.3s all ease-out;
+	color: var(--c-text-regular);
 }
 .button--primary {
 	border: 1px solid var(--c-primary);
@@ -343,10 +355,25 @@ body {
 	background-position: center;
 }
 
+.link-more {
+	font-weight: 600;
+	display: inline-block;
+	border-bottom: 1px solid var(--c-text-p);
+}
+.link-more:hover {
+	color: var(--c-secondary);
+}
+
+.time__published {
+	font-size: 14px;
+	color: var(--c-text-p);
+}
+
 @import "blocks/header";
 @import "blocks/hero";
 @import "blocks/interrupter";
 @import "blocks/about";
 @import "blocks/services";
 @import "blocks/help";
+@import "blocks/articles";
 @import "blocks/footer";
