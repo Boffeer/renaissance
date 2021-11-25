@@ -132,7 +132,10 @@
 						<img src="./img/about/about-2.png" alt="" class="about-row__img">
 						<div class="about-row-desc">
 							<h4 class="about-row-desc__subject">О проекте</h4>
-							<h3 class="about-row-desc__title">Подберем индивидуальное решение для ваших задач</h3>
+							<h3 class="about-row-desc__title">
+								Подберем индивидуальное <br>
+								решение для ваших задач
+							</h3>
 							<p class="about-row-desc__text">Наши специалисты расскажут о возможных дополнениях к программам и создадут индивидуальный пакет предложений с учетом ваших финансовых целей</p>
 						</div>
 					</artilce>
@@ -145,22 +148,41 @@
 		<section class="services">
 			<div class="container">
 				<div class="services__inner">
-					<h2 class="services__title">Продукты и предложения «Ренессанс Жизнь»</h2>
+					<h2 class="services__title section__title">Продукты и предложения «Ренессанс Жизнь»</h2>
 					<div class="services-list">
+						<div class="services-list-card--gutter"></div>
 						<article class="services-list-card services-list-card--1-per-column">
 							<div class="services-list-card__inner">
 								<div class="services-list-card--front">
-									<h3 class="services-list-card__title">Целевые накопления</h3>
-									<p class="services-list-card__desc">Создайте финансовый фундамент независимо от обстоятельств</p>
+									<div class="services-list-card__top">
+										<h3 class="services-list-card__title">Целевые накопления</h3>
+										<p class="services-list-card__desc">Создайте финансовый фундамент независимо от обстоятельств</p>
+									</div>
 									<img src="./img/services/target.svg" alt="Целевые накопления" class="services-list-card__icon">
 								</div>
 								<div class="services-list-card--back">
 									<h3 class="services-list-card__title">Целевые накопления</h3>
 									<p class="services-list-card__desc">Создайте финансовый фундамент независимо от обстоятельств</p>
 									<label class="input__wrapper input--dropdown">
-										<p class="input__label">Выберите цель</p>
-										<input placeholder="Покупка дома" type="text" class="input">
-										<div class="input-icons">
+										<div class="input__field">
+											<p class="input__name">Выберите цель</p>
+											<input placeholder="Покупка дома" type="text" class="input">
+										</div>
+										<div class="input-dropdown">
+											<div class="input-dropdown-list">
+												<button class="input-dropdown-list-item">Покупка авто</button>
+												<button class="input-dropdown-list-item">Покупка дачи</button>
+												<button class="input-dropdown-list-item">Покупка виллы</button>
+												<button class="input-dropdown-list-item">Покупка Кубы</button>
+												<button class="input-dropdown-list-item">Покупка дома</button>
+												<button class="input-dropdown-list-item">Покупка техники</button>
+												<button class="input-dropdown-list-item">Покупка авто</button>
+												<button class="input-dropdown-list-item">Покупка дачи</button>
+												<button class="input-dropdown-list-item">Покупка виллы</button>
+												<button class="input-dropdown-list-item">Покупка Кубы</button>
+												<button class="input-dropdown-list-item">Покупка дома</button>
+												<button class="input-dropdown-list-item">Покупка техники</button>
+											</div>
 										</div>
 									</label>
 									<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
@@ -170,23 +192,31 @@
 						<article class="services-list-card services-list-card--3-per-column">
 							<div class="services-list-card__inner">
 								<div class="services-list-card--front">
-									<h3 class="services-list-card__title">Инвестиционная идея</h3>
-									<p class="services-list-card__desc">Возможность заработать на росте курса доллара</p>
+									<div class="services-list-card__top">
+										<h3 class="services-list-card__title">Инвестиционная идея</h3>
+										<p class="services-list-card__desc">Возможность заработать на росте курса доллара</p>
+									</div>
 									<img src="./img/services/idea.svg" alt="Инвестиционная идея" class="services-list-card__icon">
 								</div>
 								<div class="services-list-card--back">
 									<h3 class="services-list-card__title">Инвестиционная идея</h3>
 									<p class="services-list-card__desc">Возможность заработать на росте курса доллара</p>
 									<label class="input__wrapper input__wrapper-calendar">
-										<p class="input__label">Выберите цель</p>
-										<input placeholder="Покупка дома" type="text" class="input input--calendar">
+										<div class="input__field">
+											<p class="input__name">Выберите цель</p>
+											<input placeholder="Покупка дома" type="text" class="input input--calendar">
+										</div>
 										<div class="input-icons">
-											<svg class="input-icons__cross" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M4 7L10 13L16 7" stroke="#95A3BA" stroke-width="1.5"/>
-											</svg>
-											<svg class="input-icons__calendar" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M6.87484 4.16675V7.08341M13.5415 4.16675V7.08341M6.6665 9.16675H13.7498M4.1665 7.50008C4.1665 6.57961 4.9127 5.83341 5.83317 5.83341H14.5832C15.5037 5.83341 16.2498 6.57961 16.2498 7.50008V11.0417V14.5834C16.2498 15.5039 15.5037 16.2501 14.5832 16.2501H5.83317C4.9127 16.2501 4.1665 15.5039 4.1665 14.5834V7.50008Z" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg>
+											<button class="input-icons__button">
+												<svg class="input-icons__cross" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M4 7L10 13L16 7" stroke="#95A3BA" stroke-width="1.5"/>
+												</svg>
+											</button>
+											<button class="input-icons__button">
+												<svg class="input-icons__calendar" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M6.87484 4.16675V7.08341M13.5415 4.16675V7.08341M6.6665 9.16675H13.7498M4.1665 7.50008C4.1665 6.57961 4.9127 5.83341 5.83317 5.83341H14.5832C15.5037 5.83341 16.2498 6.57961 16.2498 7.50008V11.0417V14.5834C16.2498 15.5039 15.5037 16.2501 14.5832 16.2501H5.83317C4.9127 16.2501 4.1665 15.5039 4.1665 14.5834V7.50008Z" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</button>
 
 										</div>
 									</label>
@@ -197,58 +227,20 @@
 						<article class="services-list-card services-list-card--2-per-column">
 							<div class="services-list-card__inner">
 								<div class="services-list-card--front">
-									<h3 class="services-list-card__title">Акция</h3>
-									<p class="services-list-card__desc">Приходи на бесплатную финансовую консультацию в офис Ренессанс Жизнь и получи +1% к годовой доходности при оформлении продукта</p>
+									<div class="services-list-card__top">
+										<h3 class="services-list-card__title">Акция</h3>
+										<p class="services-list-card__desc">Приходи на бесплатную финансовую консультацию в офис Ренессанс Жизнь и получи +1% к годовой доходности при оформлении продукта</p>
+									</div>
 									<img src="./img/services/stock.svg" alt="Акция" class="services-list-card__icon">
 								</div>
 								<div class="services-list-card--back">
 									<h3 class="services-list-card__title">Акция</h3>
 									<p class="services-list-card__desc">Приходи на бесплатную финансовую консультацию в офис Ренессанс Жизнь и получи +1% к годовой доходности при оформлении продукта</p>
 									<label class="input__wrapper">
-										<p class="input__label">Выберите цель</p>
-										<input placeholder="Покупка дома" type="text" class="input">
-										<div class="input-icons">
-
+										<div class="input__field">
+											<p class="input__name">Выберите цель</p>
+											<input placeholder="Покупка дома" type="text" class="input">
 										</div>
-									</label>
-									<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
-								</div>
-							</div>
-						</article>
-						<article class="services-list-card services-list-card--2-per-column">
-							<div class="services-list-card__inner">
-								<div class="services-list-card--front">
-									<h3 class="services-list-card__title">Страховка для спорта</h3>
-									<p class="services-list-card__desc">Страхование спортсменов от несчастных случаев</p>
-									<img src="./img/services/sport.svg" alt="Страховка для спорта" class="services-list-card__icon">
-								</div>
-								<div class="services-list-card--back">
-									<h3 class="services-list-card__title">Страховка для спорта</h3>
-									<p class="services-list-card__desc"></p>
-									<label class="input__wrapper">
-										<p class="input__label">Выберите цель</p>
-										<input placeholder="Покупка дома" type="text" class="input">
-										<div class="input-icons">
-
-										</div>
-									</label>
-									<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
-								</div>
-							</div>
-						</article>
-						<article class="services-list-card services-list-card--2-per-column">
-							<div class="services-list-card__inner">
-								<div class="services-list-card--front">
-									<h3 class="services-list-card__title">Инвестиционное страхование жизни</h3>
-									<p class="services-list-card__desc">Программы со стопроцентной защитой капитала и высокой доходностью</p>
-									<img src="./img/services/life.svg" alt="Инвестиционное страхование жизни" class="services-list-card__icon">
-								</div>
-								<div class="services-list-card--back">
-									<h3 class="services-list-card__title">Инвестиционное страхование жизни</h3>
-									<p class="services-list-card__desc">Программы со стопроцентной защитой капитала и высокой доходностью</p>
-									<label class="input__wrapper">
-										<p class="input__label">Выберите цель</p>
-										<input placeholder="Покупка дома" type="text" class="input">
 										<div class="input-icons">
 
 										</div>
@@ -260,16 +252,75 @@
 						<article class="services-list-card services-list-card--3-per-column">
 							<div class="services-list-card__inner">
 								<div class="services-list-card--front">
-									<h3 class="services-list-card__title">Классическое страхование жизни</h3>
-									<p class="services-list-card__desc">Накопительная программа страхования для создания и защиты капитала</p>
-									<img src="./img/services/life.svg" alt="Классическое страхование жизни" class="services-list-card__icon">
+									<div class="services-list-card__top">
+										<h3 class="services-list-card__title">Страховка для спорта</h3>
+										<p class="services-list-card__desc">Страхование спортсменов от несчастных случаев</p>
+									</div>
+									<img src="./img/services/sport.svg" alt="Инвестиционное страхование жизни" class="services-list-card__icon">
+								</div>
+								<div class="services-list-card--back">
+									<h3 class="services-list-card__title">Страховка для спорта</h3>
+									<p class="services-list-card__desc">Страхование спортсменов от несчастных случаев</p>
+									<label class="input__wrapper">
+										<div class="input__field">
+											<p class="input__name">Выберите цель</p>
+											<input placeholder="Покупка дома" type="text" class="input">
+										</div>
+										<div class="input-icons">
+
+										</div>
+									</label>
+									<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
+								</div>
+							</div>
+						</article>
+						<article class="services-list-card services-list-card--2-per-column">
+							<div class="services-list-card__inner">
+								<div class="services-list-card--front">
+									<div class="services-list-card__top">
+										<h3 class="services-list-card__title">Инвестиционное страхование жизни</h3>
+										<p class="services-list-card__desc">Программы со стопроцентной защитой капитала и высокой доходностью</p>
+									</div>
+									<img src="./img/services/invest-insurance.svg" alt="Инвестиционное страхование жизни" class="services-list-card__icon">
+								</div>
+								<div class="services-list-card--back">
+									<img src="./img/services/sport.svg" alt="Страховка для спорта" class="services-list-card__icon">
+								</div>
+								<div class="services-list-card--back">
+									<h3 class="services-list-card__title">Страховка для спорта</h3>
+									<p class="services-list-card__desc"></p>
+									<h3 class="services-list-card__title">Инвестиционное страхование жизни</h3>
+									<p class="services-list-card__desc">Программы со стопроцентной защитой капитала и высокой доходностью</p>
+									<label class="input__wrapper">
+										<div class="input__field">
+											<p class="input__name">Выберите цель</p>
+											<input placeholder="Покупка дома" type="text" class="input">
+										</div>
+										<div class="input-icons">
+
+										</div>
+									</label>
+									<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
+								</div>
+							</div>
+						</article>
+						<article class="services-list-card services-list-card--3-per-column">
+							<div class="services-list-card__inner">
+								<div class="services-list-card--front">
+									<div class="services-list-card__top">
+										<h3 class="services-list-card__title">Классическое страхование жизни</h3>
+										<p class="services-list-card__desc">Накопительная программа страхования для создания и защиты капитала</p>
+									</div>
+									<img src="./img/services/classic.svg" alt="Классическое страхование жизни" class="services-list-card__icon">
 								</div>
 								<div class="services-list-card--back">
 									<h3 class="services-list-card__title">Классическое страхование жизни</h3>
 									<p class="services-list-card__desc">Накопительная программа страхования для создания и защиты капитала</p>
 									<label class="input__wrapper">
-										<p class="input__label">Выберите цель</p>
-										<input placeholder="Покупка дома" type="text" class="input">
+										<div class="input__field">
+											<p class="input__name">Выберите цель</p>
+											<input placeholder="Покупка дома" type="text" class="input">
+										</div>
 										<div class="input-icons">
 
 										</div>

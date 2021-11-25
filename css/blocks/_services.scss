@@ -1,0 +1,78 @@
+.services {
+	margin-top: -70px;
+	margin-bottom: 20px;
+}
+
+.services-list-card {
+	max-width: 410px;
+	min-width: 280px;
+	width: 100%;
+	background-color: var(--c-secondary-darker);
+	margin-bottom: 20px;
+	color: #fff;
+	padding: 42px 45px;
+	transition: transform 0.5s;
+}
+
+.services-list-card__inner {
+	height: calc(100%);
+	position: relative;
+}
+
+.services-list-card--gutter {
+	width: 20px;
+}
+
+.services-list-card--1-per-column {
+	height: calc(100%);
+	height: 1123px;
+}
+
+.services-list-card--2-per-column {
+	height: calc(100%);
+	height: 551px;
+}
+
+.services-list-card--3-per-column {
+	height: calc(100%);
+	height: 361px;
+}
+
+.services-list-card__title {
+	font-size: var(--fz-h3-card);
+	margin-bottom: 12px;
+}
+
+.services-list-card__desc {
+	color: #e1e6f0;
+	margin-bottom: 32px;
+}
+
+.services-list-card--front {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	height: calc(100%);
+	pointer-events: none;
+}
+
+.services-list-card--back {
+	position: absolute;
+	opacity: 0;
+}
+
+.services-list-card.flipped {
+	transform: rotateY(180deg);
+	background-color: #4c5d75;
+
+	.services-list-card--front {
+		position: absolute;
+		opacity: 0;
+	}
+	.services-list-card--back {
+		position: static;
+		opacity: 1;
+		transform: rotateY(-180deg);
+	}
+}

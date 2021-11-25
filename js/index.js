@@ -1,4 +1,63 @@
-var lazyLoadInstance = new LazyLoad();
+let lazyLoadInstance = new LazyLoad();
+
+let servicesMasonry = new Masonry( '.services-list', {
+  itemSelector: '.services-list-card',
+  columnWidth: '.services-list-card',
+	gutter: '.services-list-card--gutter',
+});
+
+const servicesCards = document.querySelectorAll('.services-list-card');
+
+const servicesCardFlippedClass = 'flipped';
+
+servicesCards.forEach(card => {
+	// card.classList.add(servicesCardFlippedClass);
+
+	const input = card.querySelector('.input');
+
+	card.addEventListener('click', (event) => {
+		const serviceCard = this;
+		let card = event.target
+
+		card.parentNode.classList.add(servicesCardFlippedClass);
+
+
+		// Toggles dropdown if input__wrapper has inputTypeClass === 'input--dropdown'
+		const inputTypeClass = 'input--dropdown'
+		const inputDropdownClass = '.input-dropdown'
+		if (card.classList.value.includes(inputTypeClass)) {
+			const dropdown = card.querySelector(inputDropdownClass);
+			const dropdownShownClass = 'shown';
+
+			input.focus;
+			input.onfocus = () => {
+				// setTimeout more, than onblur to fix issue while you make another click on input, when dropdown is shown
+				setTimeout(() => {
+					dropdown.classList.add(dropdownShownClass);
+				}, 100)
+			}
+			input.onblur = () => {
+				// if (!dropdown.classList.value.includes(dropdownShownClass) && (event.target !== input)) {
+					setTimeout(() => {
+						dropdown.classList.remove(dropdownShownClass);
+					}, 100)
+				// }
+			}
+			console.log(event.target)
+		}
+
+	})
+
+	let handledDropdownItems = card.querySelectorAll('.input-dropdown-list-item');
+	handledDropdownItems.forEach(item => {
+		item.addEventListener('click', () => {
+			const itemValue = item.innerText;
+			input.setAttribute('value', itemValue);
+			console.log(input.getAttribute('value'));
+		});
+	})
+
+})
 
   /**
    * Sticky Header
