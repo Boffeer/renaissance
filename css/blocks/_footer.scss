@@ -90,3 +90,28 @@
 .footer-copy-links__link:not(:last-child) {
 	margin-right: 50px;
 }
+
+@media (max-width: 576px) {
+	.footer-branding-logo {
+		max-width: 200px;
+	}
+
+	.footer-about__slogan,
+	.footer-about {
+		margin-bottom: 35px;
+	}
+
+
+	.footer-copy {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.footer-copy__right {
+		margin-bottom: 31px;
+	}
+	.footer-copy-links {
+		display: flex;
+		flex-direction: column;
+	}
+}

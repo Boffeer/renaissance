@@ -17,3 +17,40 @@
 .interrupter__slogan {
 	font-size: 32px;
 }
+
+
+@media (max-width: 1300px) {
+	.interrupter {
+		padding-top: 20px;
+	}
+	.interrupter__slogan {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 992px) {
+	.interrupter__slogan {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 576px) {
+	:root {
+		--fz-h3: 20px;
+	}
+
+	.interrupter {
+		padding-bottom: 20px;
+	}
+	.interrupter__inner {
+		padding-left: 0;
+	}
+
+	.interrupter__title {
+		padding-left: 40px;
+	}
+
+	.interrupter__slogan {
+		font-size: 16px;
+	}
+}

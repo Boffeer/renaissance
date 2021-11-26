@@ -659,6 +659,55 @@ body {
 	}
 }
 
+@media (max-width: 1600px) {
+	.skewed-bgs--bottom .skewed-bgs__item--accent {
+		bottom: 1540px;
+	}
+}
+
+@media (max-width: 1300px) {
+	.skewed-bgs--bottom .skewed-bgs__item--accent {
+		bottom: 1500px;
+	}
+	.container {
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (max-width: 1100px) {
+	.skewed-bgs--bottom .skewed-bgs__item--accent {
+		bottom: 1700px;
+	}
+}
+
+
+@media (max-width: 576px) {
+	:root {
+		--fz-regular: 14px;
+	}
+	.button {
+		padding: 15px 33px;
+		font-size: 14px;
+	}
+
+	.button__icon {
+		width: 22px;
+		height: 22px;
+	}
+
+	.has-pointer {
+		&:before {
+			width: 20px;
+			height: 20px;
+			left: 0;
+			top: -0.05em;
+		}
+	}
+
+}
 @import "blocks/header";
 @import "blocks/hero";
 @import "blocks/interrupter";
