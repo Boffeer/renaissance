@@ -1,6 +1,8 @@
 .faq {
 	padding-top: 34px;
 	margin-bottom: 80px;
+	position: relative;
+
 }
 
 .container--faq {
@@ -54,4 +56,21 @@
 	padding-bottom: 32px;
 	background-color: #f7f8fc;
 	transition: 0.4s all;
+}
+
+.faq__button {
+	max-width: 300px;
+	width: 100%;
+}
+
+.buttons__container--faq {
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.faq-headliner {
+	min-width: 335px;
+}
+.faq-cards {
+	max-width: 865px;
 }

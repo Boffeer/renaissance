@@ -427,6 +427,9 @@ body {
 		.skewed-bgs__item--grey {
 			top: 710px;
 		}
+		.skewed-bgs__item--white {
+			top: 710px;
+		}
 	}
 
 	&--bottom {
@@ -453,6 +456,13 @@ body {
 	height: 980px;
 	box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.34);
 	transform: rotate(-15deg);
+}
+
+.skewed-bgs__item--white {
+	background-color: #fff;
+	height: 980px;
+	box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.34);
+	transform: rotate(-13.38deg);
 }
 
 .skewed-bgs__item--grey {
@@ -524,6 +534,127 @@ body {
     right: -420px;
     left: unset;
     bottom: 330px;
+		opacity: 0.3;
+	}
+}
+
+// __PAGE PROGRAMM
+.page-programm {
+	.decorators-triangles {
+		z-index: 2;
+	}
+
+	.decorators-triangles__triangle--hero-left {
+		width: 600px;
+    height: 530px;
+    left: unset;
+    right: 170px;
+    top: 270px;
+	}
+
+	.skewed-bgs {
+		z-index: 1;
+		&--top {
+			top: 0;
+			.skewed-bgs__item--accent {
+				top: 120px;
+				height: 800px;
+			}
+			.skewed-bgs__item--grey {
+				top: 10px;
+				height: 888px;
+			}
+			.skewed-bgs__item--white {
+				top: 100px;
+				height: 800px;
+			}
+		}
+
+		&--bottom {
+			bottom: 0;
+			.skewed-bgs__item--accent {
+				bottom: 1580px;
+			}
+			.skewed-bgs__item--grey {
+				bottom: 2100px;
+			}
+		}
+	}
+
+	.bg-header {
+		height: 100vh;
+	}
+}
+.decorators-triangles.decorators-triangles--edges {
+	z-index: 10;
+	pointer-events: none;
+	.decorators-triangles__triangle--hero-right {
+		top: 80px;
+    right: -600px;
+    width: 1300px;
+    height: 1400px;
+	}
+	.decorators-triangles__triangle--hero-right:nth-child(2) {
+		top: 1290px;
+		right: -670px;
+	}
+	.decorators-triangles__triangle--hero-right:nth-child(3) {
+		top: 2580px;
+		right: -670px;
+	}
+	.decorators-triangles__triangle--hero-right:nth-child(4) {
+		top: 500px;
+		right: unset;
+		left: -790px;
+		opacity: 0.3;
+	}
+	.decorators-triangles__triangle--hero-right:nth-child(5) {
+		top: 1910px;
+		right: unset;
+		left: -640px;
+		opacity: 0.3;
+	}
+}
+
+.skewed-bgs--bottom.skewed-bgs--bottom-faq {
+	max-height: 3200px;
+
+	.skewed-bgs__item--accent {
+		bottom: 2723px;
+		transform: rotate(-19.8deg);
+		height: 490px;
+	}
+
+	.skewed-bgs__item--grey {
+		transform: rotate(-17.3deg);
+    height: 740px;
+    bottom: 2404px;
+	}
+}
+
+
+.decorators-triangles-t3 {
+	position: absolute;
+	top: unset;
+	bottom: 0;
+	z-index: -1;
+	overflow: visible;
+
+	.decorators-triangles__triangle--filled {
+		right: unset;
+		width: 1600px;
+		height: 1370px;
+		left: -50px;
+		top: unset;
+		bottom: 470px;
+		transform: scaleX(-1);
+	}
+	.decorators-triangles__triangle--bordered {
+		width: 900px;
+    height: 1000px;
+    left: -330px;
+    top: unset;
+    bottom: 660px;
 		opacity: 0.3;
 	}
 }

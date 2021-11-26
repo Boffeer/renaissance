@@ -1,9 +1,10 @@
 .explainer {
-	margin-bottom: 65px;
+	margin-bottom: 30px;
+	padding-top: 65px;
 }
 
 .explainer__title {
-	margin-bottom: 24px;
+	margin-bottom: 30px;
 }
 
 .explainer-tldr {
@@ -12,6 +13,7 @@
 }
 .explainer-tldr__desc {
 	max-width: 561px;
+	line-height: 1.6;
 }
 
 .explainer-tldr__desc--big {
