@@ -1,5 +1,5 @@
 .newsletter {
-	padding-top: 20px;
+	padding-top: 40px;
 	padding-bottom: 20px;
 	margin-bottom: 90px;
 }
@@ -7,10 +7,20 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
+	.decorators-triangles__triangle--bordered {
+		z-index: -1;
+		right: unset;
+    left: 210px;
+    width: 447px;
+    height: 447px;
+    top: -110px;
+	}
 }
 .newsletter__img {
 	max-width: 364px;
 	margin-right: 60px;
+	margin-left: 15px;
 }
 
 .newsletter__title {

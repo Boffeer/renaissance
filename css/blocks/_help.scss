@@ -2,18 +2,24 @@
 	margin-bottom: 35px;
 }
 .help__wrap {
-	padding-left: 85px;
+	max-width: 1180px;
+	padding-left: 70px;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
+}
+
+.help__inner {
+	padding-top: 70px;
 }
 
 .help__title {
-	margin-bottom: 16px;
+	margin-bottom: 24px;
 }
 
 .help__title::before {
 	top: 0;
+	left: -2em;
 }
 
 .help__desc {
@@ -22,8 +28,15 @@
 }
 
 .help-imgs {
-	max-width: 343px;
+	max-width: 310px;
 	width: 100%x;
+	position: relative;
+	.decorators-triangles__triangle--bordered {
+		width: 520px;
+    top: -175px;
+    right: -235px;
+		z-index: -1;
+	}
 }
 .help-imgs__img {
 	width: 100%;

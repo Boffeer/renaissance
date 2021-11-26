@@ -1,6 +1,8 @@
 .footer {
 	background-color: var(--c-text-p);
 	color: #e1e6f0;
+	position: relative;
+	z-index: 11;
 
 	p,
 	a {
@@ -19,11 +21,11 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	width: 100%;
 }
 .footer-branding-logo {
-	margin-top: 60px;
+	margin-top: 50px;
 }
 
 // .button-scroll-top {
@@ -45,7 +47,7 @@
 }
 .footer-about__slogan {
 	font-weight: 400;
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 }
 
 .footer__legal {
@@ -53,7 +55,7 @@
 	max-width: 610px;
 	font-weight: 400;
 	font-size: 12px;
-	line-height: 2;
+	line-height: 1.6;
 }
 
 .footer-about-contacts {
@@ -77,7 +79,7 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	padding-top: 45px;
+	padding-top: 55px;
 	padding-bottom: 45px;
 }
 .footer-copy__right,

@@ -1,6 +1,6 @@
 .hero {
-	padding-top: 183px;
-	background-color: var(--c-bg-secondary);
+	padding-top: 174px;
+	// background-color: var(--c-bg-secondary);
 	position: relative;
 }
 .container--hero {
@@ -23,12 +23,12 @@
 	margin-left: -50px;
 	max-width: 994px;
 	min-width: 286px;
-	width: 50%;
+	width: 100%;
 	object-fit: contain;
 	object-position: top;
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 2%;
 	z-index: 1;
 }
 .hero__buttons-set {
