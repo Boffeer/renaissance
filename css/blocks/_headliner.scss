@@ -44,3 +44,34 @@
     height: 100%;
 		object-fit: contain;
 }
+
+@media (max-width: 768px) {
+	.container--headliner {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 22px;
+	}
+	.container--headliner .container {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.headliner-offer__title {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+
+	.headliner-offer__desc {
+		margin-bottom: 30px;
+	}
+
+	.headliner-img__wrap {
+		max-height: 120px;
+		max-width: 100%;
+		width: auto;
+	}
+	.headliner-img__wrap {
+		width: 90px;
+		margin-bottom: 40px;
+	}
+}

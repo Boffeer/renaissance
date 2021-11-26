@@ -659,6 +659,11 @@ body {
 	}
 }
 
+@media (max-width: 1700px) {
+	.decorators-triangles-t3 .decorators-triangles__triangle--filled {
+		left: -650px;
+	}
+}
 @media (max-width: 1600px) {
 	.skewed-bgs--bottom .skewed-bgs__item--accent {
 		bottom: 1540px;
@@ -683,13 +688,26 @@ body {
 	}
 }
 
+@media (max-width: 992px) {
+	.decorators-triangles-t3 {
+		display: none;
+	}
+}
 
+@media (max-width: 768px) {
+	.section__title {
+		font-size: 24px;
+	}
+	.button {
+		padding: 17px 33px;
+	}
+}
 @media (max-width: 576px) {
 	:root {
 		--fz-regular: 14px;
 	}
 	.button {
-		padding: 15px 33px;
+		padding: 17px 20px;
 		font-size: 14px;
 	}
 

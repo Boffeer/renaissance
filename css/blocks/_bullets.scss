@@ -27,3 +27,24 @@
 .bullets-card__desc {
 	line-height: 1.65;
 }
+
+@media (max-width: 1300px) {
+	.bullets {
+		padding-bottom: 35px;
+	}
+}
+
+@media (max-width: 992px) {
+	.bullets {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 576px) {
+	.bullets {
+		display: block;
+	}
+	.bullets-card {
+		margin-bottom: 30px;
+	}
+}

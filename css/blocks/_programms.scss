@@ -66,3 +66,65 @@
 	font-size: 18px;
 	color: var(--c-text-regular);
 }
+
+.programms-table-cell__type--no-desc {
+	display: none;
+}
+@media (max-width: 1300px) {
+	.programms-table-cell__type--no-desc {
+		display: block;
+	}
+	.programms-table__body {
+		display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 20px;
+    padding-top: 35px;
+	}
+
+	.programms-table__row {
+		max-width: 375px;
+		display: block;
+	}
+
+	.programms-table-cell {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		margin-bottom: 20px;
+	}
+	.programms-table-heading__desc {
+		margin-bottom: 20px;
+	}
+	.programms-table-cell__type-name {
+		font: 14px;
+	}
+	.programms-table__head {
+		display: none;
+	}
+	.programms__title {
+		margin-bottom: 32px;
+	}
+}
+
+@media (max-width: 992px) {
+	.programms-table__body {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+
+@media (max-width: 768px) {
+	.programms {
+		padding-top: 35px;
+	}
+}
+
+@media (max-width: 576px) {
+	.programms-table__body {
+		display: block;
+	}
+	.programms-table__row {
+		margin-bottom: 20px;
+		padding: 30px 20px;
+	}
+}
