@@ -1,5 +1,6 @@
 let lazyLoadInstance = new LazyLoad();
 
+// STEPS
 let stepsSlider = new Swiper('.steps-slider', {
 	navigation: {
 		nextEl: '.steps-slider__button-next',
@@ -10,23 +11,10 @@ let stepsSlider = new Swiper('.steps-slider', {
 	},
 	spaceBetween: 50,
 });
+// /STEPS
 
 
-// if (faqCards !== null) {
-// 	faqCards.forEach(card => {
-// 		const question = card.querySelector('.faq-cards-card-question');
-// 		question.addEventListener('click', (event) => {
-// 			if (question.parentNode.classList.value.includes(faqOpenedClass)) {
-// 				question.parentNode.classList.remove(faqOpenedClass);
-// 			} else {
-// 				question.parentNode.classList.add(faqOpenedClass);
-// 			}
-// 			const answer = event.target.nextElementSibling;
-// 		})
-// 	})
-// }
-
-
+// FAQ
 const dropdowns = [...document.querySelectorAll('.faq-cards-card-question')];
 const dropdownOpenedClass = 'opened';
 dropdowns.forEach((dropdown, index) => {
@@ -46,3 +34,18 @@ dropdowns.forEach((dropdown, index) => {
     dropdown.click();
   }
 });
+// /FAQ
+
+// BURGER
+const burgerButton = document.querySelector('.header-burger');
+const burgerMenu = document.querySelector('.container--header');
+burgerButton.addEventListener('click', () => {
+  if (burgerMenu.classList.value.includes('opened')) {
+    burgerMenu.classList.remove('opened');
+    burgerButton.classList.remove('opened');
+  } else {
+    burgerMenu.classList.add('opened');
+    burgerButton.classList.add('opened');
+  }
+});
+// /BURGER

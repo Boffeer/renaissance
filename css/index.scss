@@ -707,7 +707,7 @@ body {
 		--fz-regular: 14px;
 	}
 	.button {
-		padding: 17px 20px;
+		padding: 15px 20px;
 		font-size: 14px;
 	}
 
@@ -725,6 +725,51 @@ body {
 		}
 	}
 
+	.decorators-triangles__triangle--hero-left {
+		top: 60px;
+    right: -85px;
+    width: 330px;
+    height: 330px;
+	}
+
+	.decorators-triangles__triangle--hero-right {
+		top: 595px;
+    right: unset;
+    width: 500px;
+    height: 500px;
+    left: -175px;
+	}
+
+	.decorators-triangles__triangle--hero-center {
+		right: -60px;
+    width: 250px;
+    height: 250px;
+	}
+
+	.skewed-bgs__item {
+		left: -60vw;
+	}
+	.skewed-bgs--top {
+		.skewed-bgs__item--accent {
+			top: 900px;
+			top: 1125px;
+			height: 865px;
+		}
+
+
+		.skewed-bgs__item--grey {
+			top: 1100px;
+			height: 880px;
+		}
+	}
+
+	.skewed-bgs--bottom {
+		.skewed-bgs__item--accent {
+			bottom: 1680px;
+			height: 1010px;
+		}
+
+	}
 }
 @import "blocks/header";
 @import "blocks/hero";

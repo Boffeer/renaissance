@@ -34,35 +34,42 @@
 						<img src="./img/icons/logo-dark-text.svg" alt="#href-current-url" class="header-branding-logo__img">
 					</a>
 				</div>
-				<nav class="header-nav">
-					<div class="header-nav-dropdown">
-						<button type="button" class="header-nav-dropdown__name">Продукты</button>
-						<ul class="header-nav-dropdown-links">
-							<li class="header-nav-dropdown-links-item">
-								<a href="#href-target" class="header-nav-dropdown-links-item__link">Целевые накопления</a>
-							</li>
-							<li class="header-nav-dropdown-links-item">
-								<a href="#href-life-insurance" class="header-nav-dropdown-links-item__link">Мастер подбора страхования жизни</a>
-							</li>
-							<li class="header-nav-dropdown-links-item">
-								<a href="#href-personal-palanning" class="header-nav-dropdown-links-item__link">Персональное планирование</a>
-							</li>
-							<li class="header-nav-dropdown-links-item">
-								<a href="#href-restospective" class="header-nav-dropdown-links-item__link">Ретроспектива и прогноз</a>
-							</li>
-							<li class="header-nav-dropdown-links-item">
-								<a href="#href-year-insurance" class="header-nav-dropdown-links-item__link">Накопительное страхование жизни до 1 года</a>
-							</li>
-							<li class="header-nav-dropdown-links-item">
-								<a href="#href-saving-life-insurance" class="header-nav-dropdown-links-item__link">Накопительное страхование жизни до 5 лет</a>
-							</li>
-							<li class="header-nav-dropdown-links-item">
-								<a href="#href-invest-life-insurance" class="header-nav-dropdown-links-item__link">Инвестиционное страхование жизни</a>
-							</li>
-						</ul>
-					</div>
-				</nav>
-				<a href="tel:+78003332981" class="header__phone">8 (800) 333-2-981</a>
+				<button class="header-burger">
+					<span class="header-burger__line"></span>
+					<span class="header-burger__line"></span>
+					<span class="header-burger__line"></span>
+				</button>
+				<div class="header__menu">
+					<nav class="header-nav">
+						<div class="header-nav-dropdown">
+							<button type="button" class="header-nav-dropdown__name">Продукты</button>
+							<ul class="header-nav-dropdown-links">
+								<li class="header-nav-dropdown-links-item">
+									<a href="#href-target" class="header-nav-dropdown-links-item__link">Целевые накопления</a>
+								</li>
+								<li class="header-nav-dropdown-links-item">
+									<a href="#href-life-insurance" class="header-nav-dropdown-links-item__link">Мастер подбора страхования жизни</a>
+								</li>
+								<li class="header-nav-dropdown-links-item">
+									<a href="#href-personal-palanning" class="header-nav-dropdown-links-item__link">Персональное планирование</a>
+								</li>
+								<li class="header-nav-dropdown-links-item">
+									<a href="#href-restospective" class="header-nav-dropdown-links-item__link">Ретроспектива и прогноз</a>
+								</li>
+								<li class="header-nav-dropdown-links-item">
+									<a href="#href-year-insurance" class="header-nav-dropdown-links-item__link">Накопительное страхование жизни до 1 года</a>
+								</li>
+								<li class="header-nav-dropdown-links-item">
+									<a href="#href-saving-life-insurance" class="header-nav-dropdown-links-item__link">Накопительное страхование жизни до 5 лет</a>
+								</li>
+								<li class="header-nav-dropdown-links-item">
+									<a href="#href-invest-life-insurance" class="header-nav-dropdown-links-item__link">Инвестиционное страхование жизни</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+					<a href="tel:+78003332981" class="header__phone">8 (800) 333-2-981</a>
+				</div>
 			</div>
 		</header>
 <main class="main">
@@ -159,181 +166,184 @@
 			<div class="container">
 				<div class="services__inner">
 					<h2 class="services__title section__title">Продукты и предложения «Ренессанс Жизнь»</h2>
-					<div class="services-list">
-						<div class="services-list-card--gutter"></div>
-						<article class="services-list-card services-list-card--1-per-column">
-							<div class="services-list-card__inner">
-								<div class="services-list-card--front">
-									<div class="services-list-card__top">
+					<div class="services-slider">
+						<div class="services-list">
+							<div class="services-list-card--gutter"></div>
+							<article class="services-list-card services-list-card--1-per-column">
+								<div class="services-list-card__inner">
+									<div class="services-list-card--front">
+										<div class="services-list-card__top">
+											<h3 class="services-list-card__title">Целевые накопления</h3>
+											<p class="services-list-card__desc">Создайте финансовый фундамент независимо от обстоятельств</p>
+										</div>
+										<img src="./img/services/target.svg" alt="Целевые накопления" class="services-list-card__icon">
+									</div>
+									<div class="services-list-card--back">
 										<h3 class="services-list-card__title">Целевые накопления</h3>
 										<p class="services-list-card__desc">Создайте финансовый фундамент независимо от обстоятельств</p>
-									</div>
-									<img src="./img/services/target.svg" alt="Целевые накопления" class="services-list-card__icon">
-								</div>
-								<div class="services-list-card--back">
-									<h3 class="services-list-card__title">Целевые накопления</h3>
-									<p class="services-list-card__desc">Создайте финансовый фундамент независимо от обстоятельств</p>
-									<label class="input__wrapper input--dropdown">
-										<div class="input__field">
-											<p class="input__name">Выберите цель</p>
-											<input placeholder="Покупка дома" type="text" class="input">
-										</div>
-										<div class="input-dropdown">
-											<div class="input-dropdown-list">
-												<button class="input-dropdown-list-item">Покупка авто</button>
-												<button class="input-dropdown-list-item">Покупка дачи</button>
-												<button class="input-dropdown-list-item">Покупка виллы</button>
-												<button class="input-dropdown-list-item">Покупка Кубы</button>
-												<button class="input-dropdown-list-item">Покупка дома</button>
-												<button class="input-dropdown-list-item">Покупка техники</button>
-												<button class="input-dropdown-list-item">Покупка авто</button>
-												<button class="input-dropdown-list-item">Покупка дачи</button>
-												<button class="input-dropdown-list-item">Покупка виллы</button>
-												<button class="input-dropdown-list-item">Покупка Кубы</button>
-												<button class="input-dropdown-list-item">Покупка дома</button>
-												<button class="input-dropdown-list-item">Покупка техники</button>
+										<label class="input__wrapper input--dropdown">
+											<div class="input__field">
+												<p class="input__name">Выберите цель</p>
+												<input placeholder="Покупка дома" type="text" class="input">
 											</div>
-										</div>
-									</label>
-									<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
+											<div class="input-dropdown">
+												<div class="input-dropdown-list">
+													<button class="input-dropdown-list-item">Покупка авто</button>
+													<button class="input-dropdown-list-item">Покупка дачи</button>
+													<button class="input-dropdown-list-item">Покупка виллы</button>
+													<button class="input-dropdown-list-item">Покупка Кубы</button>
+													<button class="input-dropdown-list-item">Покупка дома</button>
+													<button class="input-dropdown-list-item">Покупка техники</button>
+													<button class="input-dropdown-list-item">Покупка авто</button>
+													<button class="input-dropdown-list-item">Покупка дачи</button>
+													<button class="input-dropdown-list-item">Покупка виллы</button>
+													<button class="input-dropdown-list-item">Покупка Кубы</button>
+													<button class="input-dropdown-list-item">Покупка дома</button>
+													<button class="input-dropdown-list-item">Покупка техники</button>
+												</div>
+											</div>
+										</label>
+										<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
+									</div>
 								</div>
-							</div>
-						</article>
-						<article class="services-list-card services-list-card--3-per-column">
-							<div class="services-list-card__inner">
-								<div class="services-list-card--front">
-									<div class="services-list-card__top">
+							</article>
+							<article class="services-list-card services-list-card--3-per-column">
+								<div class="services-list-card__inner">
+									<div class="services-list-card--front">
+										<div class="services-list-card__top">
+											<h3 class="services-list-card__title">Инвестиционная идея</h3>
+											<p class="services-list-card__desc">Возможность заработать на росте курса доллара</p>
+										</div>
+										<img src="./img/services/idea.svg" alt="Инвестиционная идея" class="services-list-card__icon">
+									</div>
+									<div class="services-list-card--back">
 										<h3 class="services-list-card__title">Инвестиционная идея</h3>
 										<p class="services-list-card__desc">Возможность заработать на росте курса доллара</p>
-									</div>
-									<img src="./img/services/idea.svg" alt="Инвестиционная идея" class="services-list-card__icon">
-								</div>
-								<div class="services-list-card--back">
-									<h3 class="services-list-card__title">Инвестиционная идея</h3>
-									<p class="services-list-card__desc">Возможность заработать на росте курса доллара</p>
-									<label class="input__wrapper input__wrapper-calendar">
-										<div class="input__field">
-											<p class="input__name">Выберите цель</p>
-											<input placeholder="Покупка дома" type="text" class="input input--calendar">
-										</div>
-										<div class="input-icons">
-											<button class="input-icons__button">
-												<svg class="input-icons__cross" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M4 7L10 13L16 7" stroke="#95A3BA" stroke-width="1.5"/>
-												</svg>
-											</button>
-											<button class="input-icons__button">
-												<svg class="input-icons__calendar" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M6.87484 4.16675V7.08341M13.5415 4.16675V7.08341M6.6665 9.16675H13.7498M4.1665 7.50008C4.1665 6.57961 4.9127 5.83341 5.83317 5.83341H14.5832C15.5037 5.83341 16.2498 6.57961 16.2498 7.50008V11.0417V14.5834C16.2498 15.5039 15.5037 16.2501 14.5832 16.2501H5.83317C4.9127 16.2501 4.1665 15.5039 4.1665 14.5834V7.50008Z" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												</svg>
-											</button>
+										<label class="input__wrapper input__wrapper-calendar">
+											<div class="input__field">
+												<p class="input__name">Выберите цель</p>
+												<input placeholder="Покупка дома" type="text" class="input input--calendar">
+											</div>
+											<div class="input-icons">
+												<button class="input-icons__button">
+													<svg class="input-icons__cross" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M4 7L10 13L16 7" stroke="#95A3BA" stroke-width="1.5"/>
+													</svg>
+												</button>
+												<button class="input-icons__button">
+													<svg class="input-icons__calendar" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6.87484 4.16675V7.08341M13.5415 4.16675V7.08341M6.6665 9.16675H13.7498M4.1665 7.50008C4.1665 6.57961 4.9127 5.83341 5.83317 5.83341H14.5832C15.5037 5.83341 16.2498 6.57961 16.2498 7.50008V11.0417V14.5834C16.2498 15.5039 15.5037 16.2501 14.5832 16.2501H5.83317C4.9127 16.2501 4.1665 15.5039 4.1665 14.5834V7.50008Z" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+													</svg>
+												</button>
 
-										</div>
-									</label>
-									<button class="button button--primary services-list-card__button">Посмотреть прогноз</button>
+											</div>
+										</label>
+										<button class="button button--primary services-list-card__button">Посмотреть прогноз</button>
+									</div>
 								</div>
-							</div>
-						</article>
-						<article class="services-list-card services-list-card--2-per-column">
-							<div class="services-list-card__inner">
-								<div class="services-list-card--front">
-									<div class="services-list-card__top">
+							</article>
+							<article class="services-list-card services-list-card--2-per-column">
+								<div class="services-list-card__inner">
+									<div class="services-list-card--front">
+										<div class="services-list-card__top">
+											<h3 class="services-list-card__title">Акция</h3>
+											<p class="services-list-card__desc">Приходи на бесплатную финансовую консультацию в офис Ренессанс Жизнь и получи +1% к годовой доходности при оформлении продукта</p>
+										</div>
+										<img src="./img/services/stock.svg" alt="Акция" class="services-list-card__icon">
+									</div>
+									<div class="services-list-card--back">
 										<h3 class="services-list-card__title">Акция</h3>
 										<p class="services-list-card__desc">Приходи на бесплатную финансовую консультацию в офис Ренессанс Жизнь и получи +1% к годовой доходности при оформлении продукта</p>
-									</div>
-									<img src="./img/services/stock.svg" alt="Акция" class="services-list-card__icon">
-								</div>
-								<div class="services-list-card--back">
-									<h3 class="services-list-card__title">Акция</h3>
-									<p class="services-list-card__desc">Приходи на бесплатную финансовую консультацию в офис Ренессанс Жизнь и получи +1% к годовой доходности при оформлении продукта</p>
-									<label class="input__wrapper">
-										<div class="input__field">
-											<p class="input__name">Выберите цель</p>
-											<input placeholder="Покупка дома" type="text" class="input">
-										</div>
-										<div class="input-icons">
+										<label class="input__wrapper">
+											<div class="input__field">
+												<p class="input__name">Выберите цель</p>
+												<input placeholder="Покупка дома" type="text" class="input">
+											</div>
+											<div class="input-icons">
 
-										</div>
-									</label>
-									<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
+											</div>
+										</label>
+										<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
+									</div>
 								</div>
-							</div>
-						</article>
-						<article class="services-list-card services-list-card--3-per-column">
-							<div class="services-list-card__inner">
-								<div class="services-list-card--front">
-									<div class="services-list-card__top">
+							</article>
+							<article class="services-list-card services-list-card--3-per-column">
+								<div class="services-list-card__inner">
+									<div class="services-list-card--front">
+										<div class="services-list-card__top">
+											<h3 class="services-list-card__title">Страховка для спорта</h3>
+											<p class="services-list-card__desc">Страхование спортсменов от несчастных случаев</p>
+										</div>
+										<img src="./img/services/sport.svg" alt="Инвестиционное страхование жизни" class="services-list-card__icon">
+									</div>
+									<div class="services-list-card--back">
 										<h3 class="services-list-card__title">Страховка для спорта</h3>
 										<p class="services-list-card__desc">Страхование спортсменов от несчастных случаев</p>
-									</div>
-									<img src="./img/services/sport.svg" alt="Инвестиционное страхование жизни" class="services-list-card__icon">
-								</div>
-								<div class="services-list-card--back">
-									<h3 class="services-list-card__title">Страховка для спорта</h3>
-									<p class="services-list-card__desc">Страхование спортсменов от несчастных случаев</p>
-									<label class="input__wrapper">
-										<div class="input__field">
-											<p class="input__name">Выберите цель</p>
-											<input placeholder="Покупка дома" type="text" class="input">
-										</div>
-										<div class="input-icons">
+										<label class="input__wrapper">
+											<div class="input__field">
+												<p class="input__name">Выберите цель</p>
+												<input placeholder="Покупка дома" type="text" class="input">
+											</div>
+											<div class="input-icons">
 
-										</div>
-									</label>
-									<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
+											</div>
+										</label>
+										<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
+									</div>
 								</div>
-							</div>
-						</article>
-						<article class="services-list-card services-list-card--2-per-column">
-							<div class="services-list-card__inner">
-								<div class="services-list-card--front">
-									<div class="services-list-card__top">
+							</article>
+							<article class="services-list-card services-list-card--2-per-column">
+								<div class="services-list-card__inner">
+									<div class="services-list-card--front">
+										<div class="services-list-card__top">
+											<h3 class="services-list-card__title">Инвестиционное страхование жизни</h3>
+											<p class="services-list-card__desc">Программы со стопроцентной защитой капитала и высокой доходностью</p>
+										</div>
+										<img src="./img/services/invest-insurance.svg" alt="Инвестиционное страхование жизни" class="services-list-card__icon">
+									</div>
+									<div class="services-list-card--back">
 										<h3 class="services-list-card__title">Инвестиционное страхование жизни</h3>
 										<p class="services-list-card__desc">Программы со стопроцентной защитой капитала и высокой доходностью</p>
-									</div>
-									<img src="./img/services/invest-insurance.svg" alt="Инвестиционное страхование жизни" class="services-list-card__icon">
-								</div>
-								<div class="services-list-card--back">
-									<h3 class="services-list-card__title">Инвестиционное страхование жизни</h3>
-									<p class="services-list-card__desc">Программы со стопроцентной защитой капитала и высокой доходностью</p>
-									<label class="input__wrapper">
-										<div class="input__field">
-											<p class="input__name">Выберите цель</p>
-											<input placeholder="Покупка дома" type="text" class="input">
-										</div>
-										<div class="input-icons">
+										<label class="input__wrapper">
+											<div class="input__field">
+												<p class="input__name">Выберите цель</p>
+												<input placeholder="Покупка дома" type="text" class="input">
+											</div>
+											<div class="input-icons">
 
-										</div>
-									</label>
-									<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
+											</div>
+										</label>
+										<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
+									</div>
 								</div>
-							</div>
-						</article>
-						<article class="services-list-card services-list-card--3-per-column">
-							<div class="services-list-card__inner">
-								<div class="services-list-card--front">
-									<div class="services-list-card__top">
+							</article>
+							<article class="services-list-card services-list-card--3-per-column">
+								<div class="services-list-card__inner">
+									<div class="services-list-card--front">
+										<div class="services-list-card__top">
+											<h3 class="services-list-card__title">Классическое страхование жизни</h3>
+											<p class="services-list-card__desc">Накопительная программа страхования для создания и защиты капитала</p>
+										</div>
+										<img src="./img/services/classic.svg" alt="Классическое страхование жизни" class="services-list-card__icon">
+									</div>
+									<div class="services-list-card--back">
 										<h3 class="services-list-card__title">Классическое страхование жизни</h3>
 										<p class="services-list-card__desc">Накопительная программа страхования для создания и защиты капитала</p>
-									</div>
-									<img src="./img/services/classic.svg" alt="Классическое страхование жизни" class="services-list-card__icon">
-								</div>
-								<div class="services-list-card--back">
-									<h3 class="services-list-card__title">Классическое страхование жизни</h3>
-									<p class="services-list-card__desc">Накопительная программа страхования для создания и защиты капитала</p>
-									<label class="input__wrapper">
-										<div class="input__field">
-											<p class="input__name">Выберите цель</p>
-											<input placeholder="Покупка дома" type="text" class="input">
-										</div>
-										<div class="input-icons">
+										<label class="input__wrapper">
+											<div class="input__field">
+												<p class="input__name">Выберите цель</p>
+												<input placeholder="Покупка дома" type="text" class="input">
+											</div>
+											<div class="input-icons">
 
-										</div>
-									</label>
-									<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
+											</div>
+										</label>
+										<button class="button button--primary services-list-card__button">Рассчитать доходность</button>
+									</div>
 								</div>
-							</div>
-						</article>
+							</article>
+						</div>
+						<div class="swiper-pagination services-slider__pagination"></div>
 					</div>
 				</div>
 			</div>
@@ -402,75 +412,78 @@
 						</div>
 						<a href="#href-artilces-about-more" class="articles-about__more link-more">Все статьи СМИ →</a>
 					</div>
-					<div class="articles-list">
-						<div class="articles-list-article--gutter"></div>
-						<article class="articles-list-article" itemscope itemtype="http://schema.org/Article">
-							<div class="articles-list-article-tags">
-								<a href="#href-tag" class="articles-list-article-tags__tag">накопительное страхование жизни</a>
-							</div>
-							<h3 class="articles-list-article__title">
-								<a href="#" class="articles-list-article__title">
-									Страхование жизни как возможность инвестировать
-								</a>
-							</h3>
-							<p class="articles-list-article__desc">Сбалансированный инвестиционный портфель должен состоять из разных взаимодополняющих инструментов. Депозит обеспечивает небольшую, но обозначенную заранее доходность. Инвестиционное страхование жизни предоставляет более высокую потенциальную доходность при гарантиях сохранения номинала вложений</p>
-							<div class="articles-list-article-meta">
-								<span class="articles-list-article-meta__readtime">6 мин</span>
-								<time class="time__published articles-list-article-meta__published">28 Сентября 2021</time>
-							</div>
-						</article>
-						<article class="articles-list-article" itemscope itemtype="http://schema.org/Article">
-							<div class="articles-list-article-tags">
-								<a href="#href-tag" class="articles-list-article-tags__tag">персональное планирование</a>
-							</div>
-							<h3 class="articles-list-article__title">
-								<a href="#" class="articles-list-article__title">
-								Страхование от онкологии
-								</a>
-							</h3>
-							<p class="articles-list-article__desc">Рак — не приговор, если вовремя позаботиться о лечении. Онкостраховка не защитит от болезни, но обеспечивает финансовую защиту в трудные минуты</p>
-							<div class="articles-list-article-meta">
-								<span class="articles-list-article-meta__readtime">6 мин</span>
-								<time class="time__published articles-list-article-meta__published">28 Сентября 2021</time>
-							</div>
-						</article>
-						<article class="articles-list-article" itemscope itemtype="http://schema.org/Article">
-							<div class="articles-list-article-media">
-								<a href="https://youtube.com" target="_blank" class="articles-list-article-media__link">
-									<img src="https://i.ytimg.com/vi/4PPCK96UZnY/hq720.jpg" alt="Где найти деньги в случае потери здоровья" class="articles-list-article-media__thumb">
-								</a>
-								<iframe data-src="https://www.youtube.com/watch?v=4PPCK96UZnY/hq720.jpg" class="aritlces-list-article-media__video"></iframe>
-								<button class="articles-list-article-media__play">Воспроизвести видео</button>
-							</div>
-							<div class="articles-list-article-tags">
-								<a href="#href-tag" class="articles-list-article-tags__tag">Новости</a>
-							</div>
-							<h3 class="articles-list-article__title">
-								<a href="#" class="articles-list-article__title">
-									Где найти деньги в случае потери здоровья
-								</a>
-							</h3>
-							<p class="articles-list-article__desc">Откуда брать деньги, если семья столкнется с серьезными проблемами со здоровьем у одного из ее членов?</p>
-							<div class="articles-list-article-meta">
-								<span class="articles-list-article-meta__readtime">6 мин</span>
-								<time class="time__published articles-list-article-meta__published">28 Сентября 2021</time>
-							</div>
-						</article>
-						<article class="articles-list-article" itemscope itemtype="http://schema.org/Article">
-							<div class="articles-list-article-tags">
-								<a href="#href-tag" class="articles-list-article-tags__tag">Ретроспектива и прогноз</a>
-							</div>
-							<h3 class="articles-list-article__title">
-								<a href="#" class="articles-list-article__title">
-									Как МСС-коды помогают получать повышенный кэшбэк
-								</a>
-							</h3>
-							<p class="articles-list-article__desc">Чаще всего аббревиатура МСС встречается при упоминании кэшбэка за покупки. В этом видео мы расскажем, что означают эти три буквы и как с их помощью пользоваться банковскими карточками с максимальной выгодой</p>
-							<div class="articles-list-article-meta">
-								<span class="articles-list-article-meta__readtime">6 мин</span>
-								<time class="time__published articles-list-article-meta__published">28 Сентября 2021</time>
-							</div>
-						</article>
+					<div class="articles-list__wrapper">
+						<div class="articles-list">
+							<div class="articles-list-article--gutter"></div>
+							<article class="articles-list-article" itemscope itemtype="http://schema.org/Article">
+								<div class="articles-list-article-tags">
+									<a href="#href-tag" class="articles-list-article-tags__tag">накопительное страхование жизни</a>
+								</div>
+								<h3 class="articles-list-article__title">
+									<a href="#" class="articles-list-article__title">
+										Страхование жизни как возможность инвестировать
+									</a>
+								</h3>
+								<p class="articles-list-article__desc">Сбалансированный инвестиционный портфель должен состоять из разных взаимодополняющих инструментов. Депозит обеспечивает небольшую, но обозначенную заранее доходность. Инвестиционное страхование жизни предоставляет более высокую потенциальную доходность при гарантиях сохранения номинала вложений</p>
+								<div class="articles-list-article-meta">
+									<span class="articles-list-article-meta__readtime">6 мин</span>
+									<time class="time__published articles-list-article-meta__published">28 Сентября 2021</time>
+								</div>
+							</article>
+							<article class="articles-list-article" itemscope itemtype="http://schema.org/Article">
+								<div class="articles-list-article-tags">
+									<a href="#href-tag" class="articles-list-article-tags__tag">персональное планирование</a>
+								</div>
+								<h3 class="articles-list-article__title">
+									<a href="#" class="articles-list-article__title">
+									Страхование от онкологии
+									</a>
+								</h3>
+								<p class="articles-list-article__desc">Рак — не приговор, если вовремя позаботиться о лечении. Онкостраховка не защитит от болезни, но обеспечивает финансовую защиту в трудные минуты</p>
+								<div class="articles-list-article-meta">
+									<span class="articles-list-article-meta__readtime">6 мин</span>
+									<time class="time__published articles-list-article-meta__published">28 Сентября 2021</time>
+								</div>
+							</article>
+							<article class="articles-list-article" itemscope itemtype="http://schema.org/Article">
+								<div class="articles-list-article-media">
+									<a href="https://youtube.com" target="_blank" class="articles-list-article-media__link">
+										<img src="https://i.ytimg.com/vi/4PPCK96UZnY/hq720.jpg" alt="Где найти деньги в случае потери здоровья" class="articles-list-article-media__thumb">
+									</a>
+									<iframe data-src="https://www.youtube.com/watch?v=4PPCK96UZnY/hq720.jpg" class="aritlces-list-article-media__video"></iframe>
+									<button class="articles-list-article-media__play">Воспроизвести видео</button>
+								</div>
+								<div class="articles-list-article-tags">
+									<a href="#href-tag" class="articles-list-article-tags__tag">Новости</a>
+								</div>
+								<h3 class="articles-list-article__title">
+									<a href="#" class="articles-list-article__title">
+										Где найти деньги в случае потери здоровья
+									</a>
+								</h3>
+								<p class="articles-list-article__desc">Откуда брать деньги, если семья столкнется с серьезными проблемами со здоровьем у одного из ее членов?</p>
+								<div class="articles-list-article-meta">
+									<span class="articles-list-article-meta__readtime">6 мин</span>
+									<time class="time__published articles-list-article-meta__published">28 Сентября 2021</time>
+								</div>
+							</article>
+							<article class="articles-list-article" itemscope itemtype="http://schema.org/Article">
+								<div class="articles-list-article-tags">
+									<a href="#href-tag" class="articles-list-article-tags__tag">Ретроспектива и прогноз</a>
+								</div>
+								<h3 class="articles-list-article__title">
+									<a href="#" class="articles-list-article__title">
+										Как МСС-коды помогают получать повышенный кэшбэк
+									</a>
+								</h3>
+								<p class="articles-list-article__desc">Чаще всего аббревиатура МСС встречается при упоминании кэшбэка за покупки. В этом видео мы расскажем, что означают эти три буквы и как с их помощью пользоваться банковскими карточками с максимальной выгодой</p>
+								<div class="articles-list-article-meta">
+									<span class="articles-list-article-meta__readtime">6 мин</span>
+									<time class="time__published articles-list-article-meta__published">28 Сентября 2021</time>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-pagination articles-slider__pagination"></div>
 					</div>
 				</div>
 			</div>

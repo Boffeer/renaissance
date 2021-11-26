@@ -106,6 +106,10 @@
 		align-self: flex-start;
 	}
 
+	.hero {
+		padding-top: 50px;
+	}
+
 	.hero-offer__title {
 		font-size: 30px;
 		margin-bottom: 27px;
@@ -113,6 +117,13 @@
 
 	.hero-clients {
 		font-size: 16px;
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 	}
+
+	.hero-clients {
+		br {
+			display: none;
+		}
+	}
+
 }
