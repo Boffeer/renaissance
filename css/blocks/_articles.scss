@@ -266,6 +266,13 @@
 	.articles {
 		margin-bottom: 30px;
 	}
+	.decorators-triangles__triangle--articles-left {
+		height: 290px;
+		width: 290px;
+		top: unset;
+		bottom: -155px;
+		left: -41px;
+	}
 }
 
 @media (min-width: 992px) {

@@ -190,6 +190,15 @@
 	}
 
 	.decorators-triangles__triangle--about-left {
+		height: 230px;
+    width: 230px;
+    right: unset;
+    top: unset;
+    opacity: 0.6;
+    bottom: 115px;
+    left: -40px;
+	}
+	.decorators-triangles__triangle--about-right {
 		width: 395px;
     height: 390px;
     right: unset;
@@ -197,14 +206,5 @@
     top: unset;
     opacity: 1;
     bottom: -90px;
-	}
-	.decorators-triangles__triangle--about-right {
-		height: 230px;
-    width: 230px;
-    right: unset;
-    top: unset;
-    opacity: 0.3;
-    bottom: 115px;
-    left: -40px;
 	}
 }

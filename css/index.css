@@ -834,9 +834,67 @@ body {
     top: 1100px;
     height: 880px;
   }
+  .skewed-bgs--bottom {
+    z-index: 1;
+    bottom: 350px;
+  }
   .skewed-bgs--bottom .skewed-bgs__item--accent {
-    bottom: 1680px;
+    bottom: 1325px;
     height: 1010px;
+  }
+  .skewed-bgs--bottom .skewed-bgs__item--grey {
+    bottom: 1820px;
+  }
+  .decorators-triangles-t2 {
+    z-index: 2;
+  }
+  .decorators-triangles-t2 .decorators-triangles__triangle--filled {
+    stroke: #fff;
+    stroke-width: 3;
+  }
+  .decorators-triangles-t2 .decorators-triangles__triangle--filled path {
+    fill: none;
+  }
+  .decorators-triangles-t2 .decorators-triangles__triangle--bordered {
+    width: 500px;
+    left: 0;
+    height: 500px;
+    top: -10px;
+  }
+  .decorators-triangles-t2 .decorators-triangles__triangle--bordered {
+    width: 230px;
+    left: unset;
+    height: 230px;
+    top: -10px;
+    right: -20px;
+  }
+  .decorators-triangles-t2 .decorators-triangles__triangle--articles-1 {
+    width: 470px;
+    height: 470px;
+    top: 890px;
+    right: -147px;
+    opacity: 0.3;
+  }
+  .decorators-triangles-t2 .decorators-triangles__triangle--articles-2 {
+    width: 340px;
+    height: 340px;
+    top: 1230px;
+    right: 0px;
+    opacity: 0.3;
+  }
+  .decorators-triangles-t2 .decorators-triangles__triangle--articles-2 path {
+    stroke: #ffffff;
+  }
+  .decorators-triangles-t2 .decorators-triangles__triangle--articles-3 {
+    width: 180px;
+    height: 180px;
+    top: 1465px;
+    right: 37px;
+    opacity: 0.3;
+  }
+  .decorators-triangles-t2 .decorators-triangles__triangle--articles-3 path {
+    stroke: #ffffff;
+    stroke-width: 4;
   }
 }
 
@@ -1510,6 +1568,15 @@ body {
     top: 154px;
   }
   .decorators-triangles__triangle--about-left {
+    height: 230px;
+    width: 230px;
+    right: unset;
+    top: unset;
+    opacity: 0.6;
+    bottom: 115px;
+    left: -40px;
+  }
+  .decorators-triangles__triangle--about-right {
     width: 395px;
     height: 390px;
     right: unset;
@@ -1517,15 +1584,6 @@ body {
     top: unset;
     opacity: 1;
     bottom: -90px;
-  }
-  .decorators-triangles__triangle--about-right {
-    height: 230px;
-    width: 230px;
-    right: unset;
-    top: unset;
-    opacity: 0.3;
-    bottom: 115px;
-    left: -40px;
   }
 }
 
@@ -1684,6 +1742,9 @@ body {
   .services__title {
     margin-bottom: 22px;
   }
+  .services-slider .swiper-pagination.services-slider__pagination.swiper-pagination-horizontal {
+    width: auto;
+  }
   .services-slider .swiper-pagination.services-slider__pagination.swiper-pagination-horizontal .swiper-pagination-bullet-active {
     background: var(--c-primary);
   }
@@ -1749,6 +1810,9 @@ body {
 }
 
 @media (max-width: 576px) {
+  .help {
+    padding-top: 40px;
+  }
   .help__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1761,6 +1825,18 @@ body {
   }
   .help-imgs {
     max-width: 217px;
+  }
+  .help-imgs .decorators-triangles__triangle--bordered {
+    width: 260px;
+    height: 260px;
+    right: unset;
+    left: -70px;
+    top: -20px;
+    opacity: 1;
+  }
+  .help-imgs .decorators-triangles__triangle--bordered path {
+    stroke: var(--c-primary);
+    stroke-width: 5;
   }
   .help__title {
     font-weight: 400;
@@ -2085,6 +2161,13 @@ body {
   .articles {
     margin-bottom: 30px;
   }
+  .decorators-triangles__triangle--articles-left {
+    height: 290px;
+    width: 290px;
+    top: unset;
+    bottom: -155px;
+    left: -41px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -2187,6 +2270,7 @@ body {
 @media (max-width: 576px) {
   .newsletter {
     margin-bottom: 0;
+    padding-top: 60px;
   }
   .container--newsletter {
     -webkit-box-orient: vertical;
@@ -2203,6 +2287,17 @@ body {
   .newsletter__submit {
     max-width: 100%;
     width: 100%;
+  }
+  .container--newsletter .decorators-triangles__triangle--bordered {
+    z-index: -1;
+    right: unset;
+    left: 10px;
+    width: 197px;
+    height: 197px;
+    top: -40px;
+  }
+  .container--newsletter .decorators-triangles__triangle--bordered path {
+    stroke-width: 4;
   }
 }
 

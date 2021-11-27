@@ -76,6 +76,7 @@
 @media (max-width: 576px) {
 	.newsletter {
 		margin-bottom: 0;
+		padding-top: 60px;
 	}
 	.container--newsletter {
 		flex-direction: column;
@@ -89,5 +90,18 @@
 	.newsletter__submit {
 		max-width: 100%;
 		width: 100%;
+	}
+
+	.container--newsletter .decorators-triangles__triangle--bordered {
+		z-index: -1;
+    right: unset;
+    left: 10px;
+    width: 197px;
+    height: 197px;
+    top: -40px;
+
+		path {
+			stroke-width: 4;
+		}
 	}
 }

@@ -44,6 +44,9 @@
 
 
 @media (max-width: 576px) {
+	.help {
+		padding-top: 40px;
+	}
 	.help__wrap {
 		flex-direction: column-reverse;
 		align-items: center;
@@ -52,6 +55,20 @@
 
 	.help-imgs {
 		max-width: 217px;
+
+		.decorators-triangles__triangle--bordered {
+			width: 260px;
+			height: 260px;
+			right: unset;
+			left: -70px;
+			top: -20px;
+			opacity: 1;
+
+			path {
+				stroke: var(--c-primary);
+				stroke-width: 5;
+			}
+		}
 	}
 
 	.help__title {
@@ -80,4 +97,6 @@
 	.help__button {
 		width: 100%;
 	}
+
+
 }

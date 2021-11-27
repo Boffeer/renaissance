@@ -756,7 +756,6 @@ body {
 			height: 865px;
 		}
 
-
 		.skewed-bgs__item--grey {
 			top: 1100px;
 			height: 880px;
@@ -764,11 +763,74 @@ body {
 	}
 
 	.skewed-bgs--bottom {
+		z-index: 1;
+		bottom: 350px;
+
 		.skewed-bgs__item--accent {
-			bottom: 1680px;
+			bottom: 1325px;
 			height: 1010px;
 		}
 
+		.skewed-bgs__item--grey {
+			bottom: 1820px;
+		}
+	}
+
+	.decorators-triangles-t2 {
+		z-index: 2;
+
+		.decorators-triangles__triangle--filled {
+			stroke: #fff;
+			stroke-width: 3;
+
+			path {
+				fill: none;
+			}
+		}
+		.decorators-triangles__triangle--bordered {
+			width: 500px;
+			left: 0;
+			height: 500px;
+			top: -10px;
+		}
+
+		.decorators-triangles__triangle--bordered {
+			width: 230px;
+			left: unset;
+			height: 230px;
+			top: -10px;
+			right: -20px;
+		}
+		.decorators-triangles__triangle--articles-1 {
+			width: 470px;
+			height: 470px;
+			top: 890px;
+			right: -147px;
+			opacity: 0.3;
+		}
+		.decorators-triangles__triangle--articles-2 {
+			width: 340px;
+			height: 340px;
+			top: 1230px;
+			right: 0px;
+			opacity: 0.3;
+
+			path {
+				stroke: #ffffff;
+			}
+		}
+		.decorators-triangles__triangle--articles-3 {
+			width: 180px;
+			height: 180px;
+			top: 1465px;
+			right: 37px;
+			opacity: 0.3;
+
+			path {
+				stroke: #ffffff;
+				stroke-width: 4;
+			}
+		}
 	}
 }
 @import "blocks/header";

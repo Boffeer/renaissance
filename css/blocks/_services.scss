@@ -158,10 +158,12 @@
 	}
 
 	.services-slider .swiper-pagination.services-slider__pagination.swiper-pagination-horizontal {
+		width: auto;
 		.swiper-pagination-bullet-active {
 			background: var(--c-primary);
 		}
 	}
+
 }
 @media (min-width: 992px) {
 	.services-slider__pagination {
