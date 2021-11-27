@@ -26,12 +26,12 @@
 
 		<header class="header">
 			<div class="container container--header">
-				<div class="header-branding">
+				<div itemscope itmtype="https://schema.org/Organization" class="header-branding">
 					<a href="https://banki.ru" class="header-branding-logo">
 						<img src="./img/icons/banki-logo.svg" alt="banki.ru" class="header-branding-logo__img">
 					</a>
 					<a href="#href-current-url" class="header-branding-logo">
-						<img src="./img/icons/logo-dark-text.svg" alt="#href-current-url" class="header-branding-logo__img">
+						<img itemprop="logo" src="./img/icons/logo-dark-text.svg" alt="#href-current-url" class="header-branding-logo__img">
 					</a>
 				</div>
 				<button class="header-burger">
@@ -383,67 +383,69 @@
 						<p class="articles__desc">Рассказываем о преимуществах страхования жизни и наших продуктах</p>
 						<a href="#href-articles" class="link--arrowed link-more">Все новости →</a>
 					</div>
+
 					<div class="articles-about">
 						<h3 class="articles-about__title">СМИ о нас</h3>
 						<div class="articles-about-list">
-							<article class="articles-about-list-card">
-								<h3 class="articles-about-list-card__title">
-									<a href="#href-articles-about" class="articles-about-list-card__link">
+							<article itemscope itemtype="http://schema.org/Article" itemref="_image3" class="articles-about-list-card">
+								<h3 itemprop="name" class="articles-about-list-card__title">
+									<a itemprop="url" href="#href-articles-about" class="articles-about-list-card__link">
 										Как «Ренессанс Жизнь» помогает населению копить на мечту
 									</a>
 								</h3>
-								<time class="time__published articles-about-list-card__time">11 Ноября 2021</time>
+								<time class="time__published articles-about-list-card__time" datetime="2021-11-11">11 Ноября 2021</time>
 							</article>
-							<article class="articles-about-list-card">
-								<h3 class="articles-about-list-card__title">
-									<a href="#href-articles-about" class="articles-about-list-card__link">
+							<article itemscope itemtype="http://schema.org/Article" itemref="_image3" class="articles-about-list-card">
+								<h3 itemprop="name" class="articles-about-list-card__title">
+									<a itemprop="url" href="#href-articles-about" class="articles-about-list-card__link">
 										Рейтинг страховых компаний и продуктов 2021
 									</a>
 								</h3>
-								<time class="time__published articles-about-list-card__time">06 Октября 2021</time>
+								<time class="time__published articles-about-list-card__time" datetime="2021-10-06">06 Октября 2021</time>
 							</article>
-							<article class="articles-about-list-card">
-								<h3 class="articles-about-list-card__title">
-									<a href="#href-articles-about" class="articles-about-list-card__link">
+							<article itemscope itemtype="http://schema.org/Article" itemref="_image3" class="articles-about-list-card">
+								<h3 itemprop="name" class="articles-about-list-card__title">
+									<a itemprop="url" href="#href-articles-about" class="articles-about-list-card__link">
 										Как «Ренессанс Жизнь» помогает населению копить на мечту
 									</a>
 								</h3>
-								<time class="time__published articles-about-list-card__time">11 Ноября 2021</time>
+								<time class="time__published articles-about-list-card__time" datatime="2021-11-11">11 Ноября 2021</time>
 							</article>
 						</div>
 						<a href="#href-articles-about-more" class="articles-about__more link-more">Все статьи СМИ →</a>
 					</div>
+
 					<div class="articles-list__wrapper">
 						<div class="articles-list">
 							<div class="articles-list-article--gutter"></div>
-							<article class="articles-list-article" itemscope itemtype="http://schema.org/Article">
+							<article class="articles-list-article" itemscope itemtype="http://schema.org/Article" itemref="_image3">
 								<div class="articles-list-article-tags">
 									<a href="#href-tag" class="articles-list-article-tags__tag">накопительное страхование жизни</a>
 								</div>
-								<h3 class="articles-list-article__title">
-									<a href="#" class="articles-list-article__title">
+								<h3 itemprop="name" class="articles-list-article__title">
+									<a href="#" itemprop="url" class="articles-list-article__title">
 										Страхование жизни как возможность инвестировать
 									</a>
 								</h3>
-								<p class="articles-list-article__desc">Сбалансированный инвестиционный портфель должен состоять из разных взаимодополняющих инструментов. Депозит обеспечивает небольшую, но обозначенную заранее доходность. Инвестиционное страхование жизни предоставляет более высокую потенциальную доходность при гарантиях сохранения номинала вложений</p>
+								<p itemprop="abstract" class="articles-list-article__desc">Сбалансированный инвестиционный портфель должен состоять из разных взаимодополняющих инструментов. Депозит обеспечивает небольшую, но обозначенную заранее доходность. Инвестиционное страхование жизни предоставляет более высокую потенциальную доходность при гарантиях сохранения номинала вложений</p>
 								<div class="articles-list-article-meta">
 									<span class="articles-list-article-meta__readtime">6 мин</span>
-									<time class="time__published articles-list-article-meta__published">28 Сентября 2021</time>
+									<time itemprop="datePublished" class="time__published articles-list-article-meta__published"datatime="2021-09-28" >28 Сентября 2021</time>
 								</div>
 							</article>
 							<article class="articles-list-article" itemscope itemtype="http://schema.org/Article">
 								<div class="articles-list-article-tags">
 									<a href="#href-tag" class="articles-list-article-tags__tag">персональное планирование</a>
 								</div>
-								<h3 class="articles-list-article__title">
-									<a href="#" class="articles-list-article__title">
+								<h3 itemprop="name" class="articles-list-article__title">
+									<a href="#" itemprop="url" class="articles-list-article__title">
 									Страхование от онкологии
 									</a>
 								</h3>
-								<p class="articles-list-article__desc">Рак — не приговор, если вовремя позаботиться о лечении. Онкостраховка не защитит от болезни, но обеспечивает финансовую защиту в трудные минуты</p>
+								<p itemprop="abstract" class="articles-list-article__desc">Рак — не приговор, если вовремя позаботиться о лечении. Онкостраховка не защитит от болезни, но обеспечивает финансовую защиту в трудные минуты</p>
 								<div class="articles-list-article-meta">
 									<span class="articles-list-article-meta__readtime">6 мин</span>
-									<time class="time__published articles-list-article-meta__published">28 Сентября 2021</time>
+									<time itemprop="datePublished" class="time__published articles-list-article-meta__published" datatime="2021-09-28">28 Сентября 2021</time>
 								</div>
 							</article>
 							<article class="articles-list-article" itemscope itemtype="http://schema.org/Article">
@@ -457,30 +459,30 @@
 								<div class="articles-list-article-tags">
 									<a href="#href-tag" class="articles-list-article-tags__tag">Новости</a>
 								</div>
-								<h3 class="articles-list-article__title">
-									<a href="#" class="articles-list-article__title">
+								<h3 itemprop="name" class="articles-list-article__title">
+									<a href="#" itemprop="url" class="articles-list-article__title">
 										Где найти деньги в случае потери здоровья
 									</a>
 								</h3>
-								<p class="articles-list-article__desc">Откуда брать деньги, если семья столкнется с серьезными проблемами со здоровьем у одного из ее членов?</p>
+								<p itemprop="abstract" class="articles-list-article__desc">Откуда брать деньги, если семья столкнется с серьезными проблемами со здоровьем у одного из ее членов?</p>
 								<div class="articles-list-article-meta">
 									<span class="articles-list-article-meta__readtime">6 мин</span>
-									<time class="time__published articles-list-article-meta__published">28 Сентября 2021</time>
+									<time itemprop="datePublished" class="time__published articles-list-article-meta__published" datatime="2021-09-28">28 Сентября 2021</time>
 								</div>
 							</article>
 							<article class="articles-list-article" itemscope itemtype="http://schema.org/Article">
 								<div class="articles-list-article-tags">
 									<a href="#href-tag" class="articles-list-article-tags__tag">Ретроспектива и прогноз</a>
 								</div>
-								<h3 class="articles-list-article__title">
-									<a href="#" class="articles-list-article__title">
+								<h3 itemprop="name" class="articles-list-article__title">
+									<a href="#" itemprop="url" class="articles-list-article__title">
 										Как МСС-коды помогают получать повышенный кэшбэк
 									</a>
 								</h3>
-								<p class="articles-list-article__desc">Чаще всего аббревиатура МСС встречается при упоминании кэшбэка за покупки. В этом видео мы расскажем, что означают эти три буквы и как с их помощью пользоваться банковскими карточками с максимальной выгодой</p>
+								<p itemprop="abstract" class="articles-list-article__desc">Чаще всего аббревиатура МСС встречается при упоминании кэшбэка за покупки. В этом видео мы расскажем, что означают эти три буквы и как с их помощью пользоваться банковскими карточками с максимальной выгодой</p>
 								<div class="articles-list-article-meta">
 									<span class="articles-list-article-meta__readtime">6 мин</span>
-									<time class="time__published articles-list-article-meta__published">28 Сентября 2021</time>
+									<time itemprop="datePublished" class="time__published articles-list-article-meta__published" datetime="2021-09-28">28 Сентября 2021</time>
 								</div>
 							</article>
 						</div>
@@ -575,26 +577,32 @@
 						</svg>
 					</button>
 				</div>
-				<div class="footer-about">
-					<p class="footer-about__slogan">
+				<div class="footer-about" itemscope itmtype="https://schema.org/Organization">
+					<p itemprop="slogan" class="footer-about__slogan">
 						Чтобы не случилось, важно заранее заботиться о себе и своих близких. Страхование жизни и здоровья позволит обеспечить финансовую поддержку в случае наступления непредвиденных ситуаций и обеспечит дополнительный доход для вас и ваших близких
 					</p>
-					<p class="footer-about__name">Страховая услуга предоставляется ООО «СК «Ренессанс Жизнь».</p>
+					<p class="footer-about__name">Страховая услуга предоставляется <span itemprop="name">ООО «СК «Ренессанс Жизнь».</span></p>
 					<a href="#href-license" class="footer-about footer-about--license">Лицензия ЦБ РФ СЖ № 3972 от 11.05.2017 на осуществление страхования жизни.</a>
 					<address class="footer-about-contacts">
-						<p class="footer-about-contacts__address">
+						<p itemprop="address" class="footer-about-contacts__address">
 							Россия, 115114, Москва, Дербеневская набережная, <br>
 							д.7, стр. 22, этаж 4, пом. 13, ком. 11
 						</p>
 						<div class="footer-about-contacts__phones">
 							<span>Тел: <br></span>
-							<a href="tel:+74959812981" class="footer-about-contacts__phone">+7 (495) 981-2-981 для Москвы и МО</a>
-							<a href="tel:+78003332981" class="footer-about-contacts__phone">8 (800) 333-2-981 для остальных регионов</a>
+							<p>
+								<a itemprop="telephone" href="tel:+74959812981" class="footer-about-contacts__phone">+7 (495) 981-2-981 </a>
+								для Москвы и МО
+							</p>
+							<p>
+								<a itemprop="telephone" href="tel:+78003332981" class="footer-about-contacts__phone">8 (800) 333-2-981 </a>
+								для остальных регионов
+							</p>
 						</div>
 						<div class="footer-about-contacts__emails">
 							<span>Электронная почта: <br></span>
-							<a href="mailto:info@renlife.com" class="footer-abou-contactst__email">info@renlife.com</a>,
-							<a href="mailto:client@renlife.com" class="footer-about-contacts__email">client@renlife.com</a>
+							<a itemprop="email" href="mailto:info@renlife.com" class="footer-abou-contactst__email">info@renlife.com</a>,
+							<a itemprop="email" href="mailto:client@renlife.com" class="footer-about-contacts__email">client@renlife.com</a>
 						</div>
 					</address>
 				</div>

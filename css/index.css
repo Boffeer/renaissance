@@ -2693,10 +2693,6 @@ body {
   margin-bottom: 5px;
 }
 
-.footer-about-contacts__phone {
-  display: block;
-}
-
 .footer-about-contacts__address {
   -webkit-user-select: all;
      -moz-user-select: all;
