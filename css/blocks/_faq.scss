@@ -46,6 +46,7 @@
 	transform: translateY(-50%);
 	transform-origin: center center;
 	pointer-events: none;
+	color: #50287D;
 }
 .opened .faq-cards-card-question__closer {
 	transform: translateY(-50%) rotate(45deg);
@@ -94,6 +95,9 @@
 }
 
 @media (max-width: 768px) {
+	.faq {
+		margin-bottom: 40px;
+	}
 	.buttons__container--right {
 		justify-content: flex-start;
 		padding-right: 0;
@@ -102,6 +106,12 @@
 	.faq-headliner {
 		display: block;
 		margin-bottom: 34px;
+	}
+	.faq-cards-card-question__closer {
+		font-family: initial;
+		top: 50%;
+    right: 16px;
+		font-size: 44px;
 	}
 }
 

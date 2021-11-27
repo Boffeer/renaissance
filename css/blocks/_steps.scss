@@ -96,8 +96,23 @@
 		padding-bottom: 30px;
 	}
 
+	.steps-slider-slide__img {
+		max-width: 515px;
+	}
+	.steps-slider-slide__text {
+		padding-right: 30px;
+	}
+
 }
 
+@media (max-width: 1300px) and (min-width: 992px) {
+	.swiper-slider__buttons {
+		width: 50vw;
+    left: unset;
+    right: 0;
+    justify-content: flex-start;
+	}
+}
 @media (max-width: 992px) {
 	.steps-slider-slide {
 		flex-direction: column-reverse;
@@ -128,5 +143,14 @@
 		font-size: 16px;
 		line-height: 160%;
 		font-weight: 400;
+	}
+}
+
+@media (max-width: 576px) {
+	.steps__title {
+		margin-bottom: 20px;
+	}
+	.steps {
+		padding-top: 20px;
 	}
 }

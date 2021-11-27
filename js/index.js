@@ -53,21 +53,59 @@ burgerButton.addEventListener('click', () => {
 
 // SMOOTH ANCHORS
 const anchors = document.querySelectorAll('a[href*="#"]');
-anchors.forEach(anchor => {
-  anchor.addEventListener('click', (event) => {
-    event.preventDefault()
-    let currentPageOffset = document.querySelector('html').scrollTop;
-    let anchor = event.target;
-    let scrollTo = anchor.getAttribute('href');
-    scrollTo = scrollTo.replace('#', '.');
-    scrollTo = document.querySelector(scrollTo).getBoundingClientRect().top + window.scrollY;
+if (anchors != undefined && anchors != null) {
+  anchors.forEach(anchor => {
+    anchor.addEventListener('click', (event) => {
+      event.preventDefault()
+      let currentPageOffset = document.querySelector('html').scrollTop;
+      let anchor = event.target;
+      let scrollTo = anchor.getAttribute('href');
+      scrollTo = scrollTo.replace('#', '.');
+      scrollTo = document.querySelector(scrollTo).getBoundingClientRect().top + window.scrollY;
 
-    while (currentPageOffset < scrollTo - 100) {
-      currentPageOffset++;
-      setTimeout(() => {
-        document.querySelector('html').scrollTop++
-      }, 65)
-    }
+      while (currentPageOffset < scrollTo - 100) {
+        currentPageOffset++;
+        setTimeout(() => {
+          document.querySelector('html').scrollTop++
+        }, 65)
+      }
+    })
   })
-})
+}
 // /SMOOTH ANCHORS
+
+function toggleDropdown(event, input, iteratable) {
+	// Toggles dropdown if input__wrapper has inputTypeClass === 'input--dropdown'
+	const inputTypeClass = 'input--dropdown'
+	const inputDropdownClass = '.input-dropdown'
+	if (iteratable.classList.value.includes(inputTypeClass)) {
+		const dropdown = iteratable.querySelector(inputDropdownClass);
+		const dropdownShownClass = 'shown';
+
+		input.focus;
+		input.onfocus = () => {
+			// setTimeout more, than onblur to fix issue while you make another click on input, when dropdown is shown
+			setTimeout(() => {
+				dropdown.classList.add(dropdownShownClass);
+        iteratable.classList.add(dropdownShownClass);
+			}, 100)
+		}
+		input.onblur = () => {
+			// if (!dropdown.classList.value.includes(dropdownShownClass) && (event.target !== input)) {
+				setTimeout(() => {
+					dropdown.classList.remove(dropdownShownClass);
+          iteratable.classList.remove(dropdownShownClass);
+				}, 100)
+			// }
+		}
+		// console.log(event.target)
+	}
+}
+
+const dropdownInputs = document.querySelectorAll('.input--dropdown');
+dropdownInputs.forEach(input => {
+  input.addEventListener('click', (event) => {
+    toggleDropdown(event, event.target, input)
+  })
+  input.click();
+})
