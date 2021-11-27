@@ -3434,7 +3434,7 @@ body {
 }
 
 @media (max-width: 361px) and (min-width: 350px) {
-  .programms-filter .input__wrapper {
+  .programms-filter .programms-filter__period {
     max-width: 200px;
   }
 }
