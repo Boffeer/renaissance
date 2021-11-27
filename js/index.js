@@ -49,3 +49,25 @@ burgerButton.addEventListener('click', () => {
   }
 });
 // /BURGER
+
+
+// SMOOTH ANCHORS
+const anchors = document.querySelectorAll('a[href*="#"]');
+anchors.forEach(anchor => {
+  anchor.addEventListener('click', (event) => {
+    event.preventDefault()
+    let currentPageOffset = document.querySelector('html').scrollTop;
+    let anchor = event.target;
+    let scrollTo = anchor.getAttribute('href');
+    scrollTo = scrollTo.replace('#', '.');
+    scrollTo = document.querySelector(scrollTo).getBoundingClientRect().top + window.scrollY;
+
+    while (currentPageOffset < scrollTo - 100) {
+      currentPageOffset++;
+      setTimeout(() => {
+        document.querySelector('html').scrollTop++
+      }, 65)
+    }
+  })
+})
+// /SMOOTH ANCHORS
