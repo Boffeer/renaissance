@@ -101,13 +101,14 @@
 	}
 }
 
+@media (max-width: 768px) {
+	.hero {
+		padding-top: 50px;
+	}
+}
 @media (max-width: 576px) {
 	.hero-img__wrap {
 		align-self: flex-start;
-	}
-
-	.hero {
-		padding-top: 50px;
 	}
 
 	.hero-offer__title {

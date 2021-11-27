@@ -500,8 +500,13 @@ body {
 	width: 1720px;
 	height: 1350px;
 }
+
 .decorators-triangles__triangle--hero-center {
 	right: 220px;
+}
+
+.decorators-triangles__triangle--hero-left-bottom {
+	display: none;
 }
 
 .decorators-triangles-t2 {
@@ -858,6 +863,25 @@ body {
 		.skewed-bgs__item--grey {
 			height: 910px;
 			left: -100vw;
+		}
+	}
+}
+
+@media (min-width: 1600px) {
+	.decorators-triangles__triangle--hero-left,
+	.decorators-triangles__triangle--hero-right {
+		path {
+			stroke-width: 2
+		}
+	}
+	.decorators-triangles__triangle--hero-left-bottom {
+		display: block;
+		width: 500px;
+		height: 500px;
+		top: 1080px;
+		left: -270px;
+		path {
+			stroke-width: 6;
 		}
 	}
 }
