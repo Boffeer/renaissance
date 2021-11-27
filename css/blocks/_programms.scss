@@ -269,6 +269,12 @@
 	}
 }
 
+
+@media (max-width: 361px) and (min-width: 350px) {
+	.programms-filter .input__wrapper {
+		max-width: 200px;
+	}
+}
 @media (max-width: 350px) {
 	.programms-filter {
 		.input__wrapper {
