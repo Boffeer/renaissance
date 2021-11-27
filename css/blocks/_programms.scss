@@ -263,8 +263,17 @@
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
 	.programms-filter {
 		display: none;
+	}
+}
+
+@media (max-width: 350px) {
+	.programms-filter {
+		.input__wrapper {
+			max-width: 100%;
+			width: 100%;
+		}
 	}
 }

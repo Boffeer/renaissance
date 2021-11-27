@@ -204,6 +204,17 @@ const animatedElements = [
     animation: 'fadeInLeft',
     hasDelay: true
   },
+  {
+    el: '.bullets-card__badge',
+    animation: 'fadeInUp',
+    hasDelay: true
+  },
+  {
+    el: '.bullets-card__desc',
+    animation: 'fadeInUp',
+    hasDelay: true
+  },
+
 ]
 
 let delay = 0;
