@@ -232,9 +232,6 @@ body {
 .buttons-set {
 	display: flex;
 	align-items: center;
-	:not(.button:last-child) {
-		margin-right: 12px;
-	}
 	.button {
 		margin-right: 12px;
 	}
@@ -1018,7 +1015,13 @@ body {
 		}
 	}
 	.skewed-bgs--bottom {
-		top: 2400px
+		top: 2490px
+	}
+}
+
+@media (max-width: 350px) {
+	.skewed-bgs--bottom {
+		top: 2690px
 	}
 }
 

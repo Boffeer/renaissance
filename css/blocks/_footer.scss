@@ -8,6 +8,9 @@
 	a {
 		color: #e1e6f0;
 	}
+	a:hover {
+		color: var(--c-primary--hover);
+	}
 }
 
 .container--footer {

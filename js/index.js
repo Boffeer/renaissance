@@ -56,7 +56,7 @@ const anchors = document.querySelectorAll('a[href*="#"]');
 if (anchors != undefined && anchors != null) {
   anchors.forEach(anchor => {
     anchor.addEventListener('click', (event) => {
-      event.preventDefault()
+      event.preventDefault();
       let currentPageOffset = document.querySelector('html').scrollTop;
       let anchor = event.target;
       let scrollTo = anchor.getAttribute('href');
@@ -73,6 +73,22 @@ if (anchors != undefined && anchors != null) {
   })
 }
 // /SMOOTH ANCHORS
+
+// SCROLL TO TOP
+const scrollToTopButtons = document.querySelectorAll('.button-scroll-top');
+scrollToTopButtons.forEach(button => {
+  button.addEventListener('click', (event) => {
+    event.preventDefault();
+    let currentPageOffset = document.querySelector('html').scrollTop;
+    while (currentPageOffset > 1) {
+      currentPageOffset--;
+      setTimeout(() => {
+        document.querySelector('html').scrollTop--
+      }, 1)
+    }
+  })
+});
+// /SCROLL TO TOP
 
 function toggleDropdown(event, input, iteratable) {
 	// Toggles dropdown if input__wrapper has inputTypeClass === 'input--dropdown'

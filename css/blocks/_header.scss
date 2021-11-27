@@ -119,6 +119,7 @@
 	right: 0;
 	left: 0;
 	background-color: #4a2472;
+	transition: all 0.3s;
 
 	&:nth-child(1) {
 		transform: translateY(-5px);
@@ -182,9 +183,13 @@
 		display: none;
 		transform: translateY(100vh);
 		transition: all 0.5s  2s ease-in;
+		padding-bottom: 30px;
 	}
 	.header-nav {
 		max-width: 100%;
+	}
+	.header-nav-dropdown__name {
+		color: var(--c-secondary);
 	}
 
 	.container--header.opened {
@@ -198,6 +203,16 @@
 		.header-branding {
 			margin-bottom: 36px;
 		}
+		.header-burger__line:nth-child(1) {
+			    transform: translateY(0) rotate(45deg);
+		}
+		.header-burger__line:nth-child(2) {
+			background-color: transparent;
+		}
+		.header-burger__line:nth-child(3) {
+			    transform: translateY(0) rotate(-45deg);
+		}
+
 	}
 
 
