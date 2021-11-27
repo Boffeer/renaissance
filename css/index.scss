@@ -833,6 +833,35 @@ body {
 		}
 	}
 }
+
+@media(max-width: 374px) {
+	.buttons-set :not(.button:last-child) {
+    margin-right: 0;
+	}
+	.buttons-set .button {
+		margin-bottom: 10px;
+		width: 100%;
+	}
+
+	.button__icon,
+	.button__text {
+		margin-bottom: 0;
+	}
+
+
+	.skewed-bgs--top {
+		.skewed-bgs__item--accent {
+			left: -100vw;
+			height: 880px;
+		}
+
+		.skewed-bgs__item--grey {
+			height: 910px;
+			left: -100vw;
+		}
+	}
+}
+
 @import "blocks/header";
 @import "blocks/hero";
 @import "blocks/interrupter";

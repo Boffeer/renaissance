@@ -208,3 +208,13 @@
     bottom: -90px;
 	}
 }
+
+@media (max-width: 374px) {
+	.about-row--img-last {
+		margin-bottom: 9px;
+
+		.about-row-desc__title {
+			margin-bottom: 262px;
+		}
+	}
+}

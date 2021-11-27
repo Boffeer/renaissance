@@ -127,3 +127,10 @@
 	}
 
 }
+
+
+@media (max-width: 374px) {
+	.hero__buttons-set {
+		flex-wrap: wrap;
+	}
+}
