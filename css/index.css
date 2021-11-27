@@ -594,7 +594,7 @@ body {
 .decorators-triangles-t2 {
   position: absolute;
   top: 2220px;
-  max-height: 3300px;
+  max-height: 2800px;
 }
 
 .decorators-triangles-t2 .decorators-triangles__triangle--bordered {
@@ -769,6 +769,15 @@ body {
   .skewed-bgs--bottom {
     top: 2860px;
   }
+  .page-programm .skewed-bgs--top .skewed-bgs__item--white {
+    top: 170px;
+  }
+  .page-programm .skewed-bgs--top .skewed-bgs__item--accent {
+    top: 170px;
+  }
+  .page-programm .skewed-bgs--top .skewed-bgs__item--grey {
+    top: 60px;
+  }
 }
 
 @media (max-width: 1310px) {
@@ -784,11 +793,21 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+  .decorators-triangles__triangle--hero-center {
+    right: 100px;
+  }
 }
 
 @media (max-width: 1100px) {
   .skewed-bgs--bottom {
     top: 2690px;
+  }
+  .decorators-triangles.decorators-triangles--edges {
+    z-index: 0;
+    opacity: 0.3;
+  }
+  .decorators-triangles.decorators-triangles--edges .decorators-triangles__triangle--hero-right {
+    width: 1100%;
   }
 }
 
@@ -798,6 +817,13 @@ body {
   }
   .skewed-bgs--bottom {
     top: 1800px;
+  }
+  .decorators-triangles__triangle--hero-center {
+    right: -190px;
+  }
+  .skewed-bgs__item {
+    width: 300vw;
+    left: -30vw;
   }
 }
 
@@ -1351,6 +1377,18 @@ body {
   }
   .header-burger {
     display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -3250,6 +3288,12 @@ body {
   color: var(--c-text-regular);
 }
 
+@media (max-width: 1300px) {
+  .programms-table__row {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 992px) {
   .programms-table-tags {
     display: -webkit-box;
@@ -3263,6 +3307,20 @@ body {
   .programms-table__row {
     position: relative;
   }
+  .programms-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .programms-filter .input__wrapper {
+    margin-bottom: 0;
+  }
+  .programms-table__body .programms-table__row {
+    padding: 40px 20px 20px 20px;
+  }
 }
 
 .programms-triangles--mobile {
@@ -3273,6 +3331,31 @@ body {
   .programms {
     padding-top: 35px;
     padding-bottom: 20px;
+  }
+  .programms-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px;
+  }
+  .programms-filter .programms-filter__amount {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .programms-filter__currency {
+    max-width: 114px;
+  }
+  .input--dropdown programms-filter__period {
+    max-width: 70%;
   }
 }
 
@@ -3324,30 +3407,20 @@ body {
   .programms-table__body {
     padding-top: 0;
   }
-  .programms-filter {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 40px;
-  }
-  .programms-filter__amount {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 10px;
-  }
-  .programms-filter__currency {
-    max-width: 114px;
-  }
   .programms-table-cell__number {
     font-size: 18px;
+  }
+  .programms-filter .input__wrapper {
+    margin-bottom: 10px;
+  }
+  .programms-filter__amount {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .programms-filter {
+    display: none;
   }
 }
 
@@ -3413,6 +3486,9 @@ body {
   }
   .conditions-table-row__heading {
     max-width: 164px;
+  }
+  .conditions-table {
+    margin-bottom: 30px;
   }
 }
 

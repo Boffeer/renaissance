@@ -69,7 +69,7 @@ if (anchors != undefined && anchors != null) {
           document.querySelector('html').scrollTop++
         }, 65)
       }
-    })
+    });
   })
 }
 // /SMOOTH ANCHORS
@@ -90,6 +90,7 @@ scrollToTopButtons.forEach(button => {
 });
 // /SCROLL TO TOP
 
+// FAQ
 function toggleDropdown(event, input, iteratable) {
 	// Toggles dropdown if input__wrapper has inputTypeClass === 'input--dropdown'
 	const inputTypeClass = 'input--dropdown'
@@ -117,6 +118,7 @@ function toggleDropdown(event, input, iteratable) {
 		// console.log(event.target)
 	}
 }
+// /FAQ
 
 const dropdownInputs = document.querySelectorAll('.input--dropdown');
 dropdownInputs.forEach(input => {
@@ -125,3 +127,101 @@ dropdownInputs.forEach(input => {
   })
   input.click();
 })
+
+
+document.querySelector('html').scrollTop = 0;
+
+
+const animatedElements = [
+  {
+    el: 'h1',
+    animation: 'fadeInLeft',
+  },
+  {
+    el: 'h2',
+    animation: 'fadeInLeft',
+  },
+  {
+    el: 'h3',
+    animation: 'fadeInLeft',
+  },
+  {
+    el: 'h4',
+    animation: 'fadeInLeft',
+  },
+  {
+    el: 'h5',
+    animation: 'fadeInLeft',
+  },
+  {
+    el: 'h6',
+    animation: 'fadeInLeft',
+  },
+  {
+    el: '.interrupter',
+    animation: 'fadeInLeft',
+  },
+  {
+    el: '.services-list-card',
+    animation: 'fadeInUp',
+    hasDelay: true
+  },
+  {
+    el: '.services-list-card__desc',
+    animation: 'fadeInLeft',
+    hasDelay: true
+  },
+  {
+    el: '.services-list-card__icon',
+    animation: 'fadeInLeft',
+    hasDelay: true
+  },
+  {
+    el: '.about-row-desc__text',
+    animation: 'fadeInUp',
+  },
+  {
+    el: '.articles-list-article',
+    animation: 'fadeInUp',
+    hasDelay: true
+  },
+  {
+    el: '.programms-table__row',
+    animation: 'fadeInUp',
+    hasDelay: true
+  },
+  {
+    el: '.articles-list-article__desc',
+    animation: 'fadeInLeft',
+    hasDelay: true
+  },
+  {
+    el: '.newsletter-from',
+    animation: 'fadeInUp',
+  },
+  {
+    el: '.articles-about-list-card',
+    animation: 'fadeInLeft',
+    hasDelay: true
+  },
+]
+
+let delay = 0;
+animatedElements.forEach(el => {
+  let toAnim = document.querySelectorAll(el.el);
+  toAnim.forEach(animated => {
+    if (animated != null || animated != undefined) {
+      animated.classList.add('animate__animated', 'animate__' + el.animation, 'wow',)
+      if (el.hasDelay) {
+        delay += 0.5;
+        console.log(delay)
+        let delayTiming = `${delay}s`;
+        animated.style.setProperty('--animate-delay', delayTiming);
+        animated.style.setProperty('--animate-duration', '1s');
+      }
+    }
+  })
+  delay = 0;
+})
+
+new WOW().init();

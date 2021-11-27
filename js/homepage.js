@@ -25,7 +25,7 @@ servicesCards.forEach(card => {
 		item.addEventListener('click', () => {
 			const itemValue = item.innerText;
 			input.setAttribute('value', itemValue);
-			console.log(input.getAttribute('value'));
+			// console.log(input.getAttribute('value'));
 		});
 	})
 

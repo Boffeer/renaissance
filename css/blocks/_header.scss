@@ -242,3 +242,11 @@
 		display: block;
 	}
 }
+
+@media (min-width: 992px) {
+	.header__menu {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+}
