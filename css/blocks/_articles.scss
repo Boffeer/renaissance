@@ -193,8 +193,18 @@
 	.articles-list-article {
 		max-width: 280px;
 	}
+	.articles-list-article {
+		max-width: 400px;
+	}
 	.articles-list-article--gutter {
 		width: 40px;
+	}
+}
+
+
+@media (max-width: 1100px) {
+	.articles-list-article {
+		max-width: 330px;
 	}
 }
 

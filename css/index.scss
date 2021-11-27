@@ -235,14 +235,19 @@ body {
 	:not(.button:last-child) {
 		margin-right: 12px;
 	}
+	.button {
+		margin-right: 12px;
+	}
+	.button:last-child {
+		margin-right: 0;
+	}
 }
 
 .buttons__container--right {
 	justify-content: flex-end;
 }
-
 .button {
-	--fz-button: var(var(--fz-regular));
+	--fz-button: var(--fz-regular);
 
 	display: inline-flex;
 	align-items: center;
@@ -438,12 +443,17 @@ body {
 	}
 
 	&--bottom {
-		bottom: 0;
+		// bottom: 0;
+		top: 2800px;
+		max-height: 2300px;
+
 		.skewed-bgs__item--accent {
-			bottom: 1580px;
+			// bottom: 1580px;
+			top: 600px;
 		}
 		.skewed-bgs__item--grey {
-			bottom: 2100px;
+			// bottom: 2100px;
+			top: 100px;
 		}
 	}
 }
@@ -585,7 +595,8 @@ body {
 		}
 
 		&--bottom {
-			bottom: 0;
+			top: 2360px;
+
 			.skewed-bgs__item--accent {
 				bottom: 1580px;
 			}
@@ -632,6 +643,7 @@ body {
 
 .skewed-bgs--bottom.skewed-bgs--bottom-faq {
 	max-height: 3200px;
+	// max-height: 2500px;
 
 	.skewed-bgs__item--accent {
 		bottom: 2723px;
@@ -679,15 +691,17 @@ body {
 	}
 }
 @media (max-width: 1600px) {
-	.skewed-bgs--bottom .skewed-bgs__item--accent {
-		bottom: 1540px;
+	.skewed-bgs--bottom {
+		top: 2860px;
 	}
 }
 
-@media (max-width: 1300px) {
-	.skewed-bgs--bottom .skewed-bgs__item--accent {
-		bottom: 1500px;
+@media (max-width: 1310px) {
+	.skewed-bgs--bottom {
+		top: 2590px;
 	}
+}
+@media (max-width: 1300px) {
 	.container {
 		padding-right: 15px;
 		padding-left: 15px;
@@ -697,14 +711,23 @@ body {
 }
 
 @media (max-width: 1100px) {
-	.skewed-bgs--bottom .skewed-bgs__item--accent {
-		bottom: 1700px;
+	.skewed-bgs--bottom {
+		top: 2690px;
 	}
 }
 
 @media (max-width: 992px) {
 	.decorators-triangles-t3 {
 		display: none;
+	}
+	.skewed-bgs--bottom {
+		top: 1800px
+	}
+}
+
+@media (max-width: 810px) {
+	.skewed-bgs--bottom {
+		top: 1900px
 	}
 }
 
@@ -714,6 +737,12 @@ body {
 	}
 	.button {
 		padding: 17px 33px;
+	}
+	.skewed-bgs__item {
+		left: -40vw;
+	}
+	.skewed-bgs--bottom {
+		top: 2100px;
 	}
 }
 @media (max-width: 576px) {
@@ -778,7 +807,8 @@ body {
 
 	.skewed-bgs--bottom {
 		z-index: 1;
-		bottom: 350px;
+		bottom: unset;
+		top: 2560px;
 
 		.skewed-bgs__item--accent {
 			bottom: 1325px;
@@ -954,13 +984,20 @@ body {
 	}
 }
 
-@media(max-width: 374px) {
-	.buttons-set :not(.button:last-child) {
-    margin-right: 0;
+@media (max-width: 991px) and (min-width: 768px) {
+	.decorators-triangles-t2 {
+		display: none;
 	}
+	.decorators-triangles__triangle--hero-center {
+		right: -100px;
+	}
+}
+
+@media(max-width: 374px) {
 	.buttons-set .button {
 		margin-bottom: 10px;
 		width: 100%;
+		margin-right: 0;
 	}
 
 	.button__icon,
@@ -979,6 +1016,9 @@ body {
 			height: 910px;
 			left: -100vw;
 		}
+	}
+	.skewed-bgs--bottom {
+		top: 2400px
 	}
 }
 
