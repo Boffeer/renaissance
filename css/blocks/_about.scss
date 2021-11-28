@@ -1,6 +1,9 @@
 .about {
 	position: relative;
+	z-index: 2;
+
 }
+
 .container--about {
 	position: relative;
 	z-index: 2;
@@ -68,6 +71,15 @@
 	color: #4c5d75;
 }
 
+.container--about {
+	z-index: 2;
+}
+.about {
+	.decorators-triangles__triangle {
+		z-index: 1;
+	}
+}
+
 .decorators-triangles__triangle--about-left {
 	width: 1295px;
 	height: 1590px;
@@ -80,7 +92,7 @@
 	height: 1300px;
 	width: 1300px;
 	right: -510px;
-	top: -210px;
+	top: -220px;
 	opacity: 0.3;
 }
 .decorators-triangles__triangle--about {

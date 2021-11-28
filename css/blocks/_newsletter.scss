@@ -64,6 +64,11 @@
 .newsletter-form__privacy--link {
 	color: #95a3ba;
 	border-bottom: 1px solid #95a3ba;
+	transition: all 0.3s ease;
+}
+.newsletter-form__privacy--link:hover {
+	color: var(--c-primary);
+	border-bottom-color: var(--c-primary);
 }
 
 .newsletter-triangles--mobile {

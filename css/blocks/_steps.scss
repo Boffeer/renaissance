@@ -68,7 +68,15 @@
 }
 
 .steps-slider__button {
-	position: static;
+	position: relative;
+	top: unset;
+	left: unset;
+	right: unset;
+	bottom: unset;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+	opacity: 0.6;
 }
 
 .steps-slider-slide__img {

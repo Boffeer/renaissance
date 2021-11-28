@@ -1,6 +1,11 @@
 .conditions {
 	padding-top: 70px;
 	padding-bottom: 34px;
+	position: relative;
+	.container {
+		position: relative;
+		z-index: 2;
+	}
 }
 .conditions__title {
 	margin-bottom: 30px;
@@ -15,7 +20,7 @@
 	margin-bottom: 70px;
 }
 
-.conditoins-table-row {
+.condtions-table-row {
 	border-bottom: 1px solid #C5D0E0;
 	padding-top: 21px;
 	padding-bottom: 21px;
@@ -48,6 +53,7 @@
 	width: 100%;
 }
 
+
 @media (max-width: 768px) {
 	.conditions {
 		padding-top: 35px;
@@ -77,7 +83,7 @@
 		max-width: 100%;
 	}
 
-	.conditoins-table-row {
+	.condtions-table-row {
 		flex-direction: column;
 		padding-top: 17px;
 		padding-bottom: 17px;
@@ -91,4 +97,22 @@
 		width: 100%;
 	}
 
+}
+
+@media (min-width: 1199px) {
+	.conditions-triangles {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		width: 100%;
+		min-height: 100%;
+	}
+	.decorators-triangles__triangle--conditions {
+    top: -50px;
+    right: -600px;
+    width: 1300px;
+    height: 1400px;
+	}
 }

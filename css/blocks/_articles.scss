@@ -1,6 +1,11 @@
 .articles {
 	// margin-bottom: 60px;
 	position: relative;
+
+	.link-more:hover {
+		color: #fff;
+		border-bottom-color: #fff;
+	}
 }
 
 .articles__inner {
@@ -68,6 +73,10 @@
 	margin-bottom: 16px;
 	font-size: 20px;
 	line-height: 1.5;
+	transition: all 0.3s ease;
+}
+.articles-list-article__title:hover {
+	color: #fff;
 }
 
 .articles-list-article__desc {
@@ -170,6 +179,10 @@
 	display: block;
 	line-height: 1.4;
 	font-weight: 400;
+	transition: 0.3s all ease;
+}
+.articles-about-list-card__link:hover {
+	color: #fff;
 }
 
 .articles-about__more {

@@ -3,6 +3,8 @@
 	// background-color: var(--c-bg-secondary);
 	padding-top: 95px;
 	padding-bottom: 90px;
+	position: relative;
+	z-index: 3;
 }
 .interrupter__inner {
 	padding-left: 70px;

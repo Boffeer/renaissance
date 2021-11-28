@@ -1,7 +1,10 @@
 
 
 const servicesCards = document.querySelectorAll('.services-list-card');
-const servicesCardFlippedClass = 'flipped';
+
+// uncomment this to return flipping effect
+// const servicesCardFlippedClass = 'flipped';
+const servicesCardFlippedClass = 'no-flip';
 
 servicesCards.forEach(card => {
 	// card.classList.add(servicesCardFlippedClass);

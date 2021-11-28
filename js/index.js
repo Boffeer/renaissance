@@ -11,7 +11,7 @@ let stepsSlider = new Swiper('.steps-slider', {
 	},
 	spaceBetween: 50,
 });
-// /STEPS
+// /Steps
 
 
 // FAQ
@@ -48,10 +48,10 @@ burgerButton.addEventListener('click', () => {
     burgerButton.classList.add('opened');
   }
 });
-// /BURGER
+// /Burger
 
 
-// SMOOTH ANCHORS
+// Smooth anchors
 const anchors = document.querySelectorAll('a[href*="#"]');
 if (anchors != undefined && anchors != null) {
   anchors.forEach(anchor => {
@@ -72,25 +72,73 @@ if (anchors != undefined && anchors != null) {
     });
   })
 }
-// /SMOOTH ANCHORS
+// /Smooth anchors
 
-// SCROLL TO TOP
+/*
+// Scroll to top
 const scrollToTopButtons = document.querySelectorAll('.button-scroll-top');
 scrollToTopButtons.forEach(button => {
   button.addEventListener('click', (event) => {
     event.preventDefault();
-    let currentPageOffset = document.querySelector('html').scrollTop;
+    // let currentPageOffset = document.querySelector('html').scrollTop;
+    let currentPageOffset = window.pageYOffset;
     while (currentPageOffset > 1) {
-      currentPageOffset--;
       setTimeout(() => {
-        document.querySelector('html').scrollTop--
-      }, 1)
+        window.requestAnimationFrame();
+        currentPageOffset = currentPageOffset - 10;
+        document.querySelector('html').scrollTop = currentPageOffset;
+      }, 1);
     }
   })
 });
-// /SCROLL TO TOP
+// /Scroll to top
+*/
 
-// FAQ
+// Scroll to top v2
+function smoothScroll(targetElement, duration) {
+  let target = document.querySelector(targetElement);
+  let targetPosition = target.getBoundingClientRect().top;
+  let startPosition = window.pageYOffset;
+  let distance = targetPosition - startPosition;
+
+  var startTime = null;
+
+  function animation(currentTime) {
+    if (startTime === null) {
+      startTime = currentTime;
+    }
+    var timeElapset = currentTime - startTime;
+
+    var run = ease(timeElapset, startPosition, distance, duration);
+    window.scrollTo(0, run);
+    if (timeElapset < duration) {
+      requestAnimationFrame(animation);
+    }
+  }
+
+  function ease(t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) {
+      return c / 2 * t * t + b;
+    }
+    t--;
+    return -c / 2 * (t * (t - 2) - 1) + b;
+  }
+
+  requestAnimationFrame(animation)
+}
+// /Smooth scroll v2
+
+const scrollToTopButtons = document.querySelectorAll('.button-scroll-top');
+scrollToTopButtons.forEach(button => {
+  button.addEventListener('click', function (event) {
+    event.preventDefault();
+    smoothScroll('html', 5500);
+  })
+})
+
+
+// Add dropdowns to inputs with modificator
 function toggleDropdown(event, input, iteratable) {
 	// Toggles dropdown if input__wrapper has inputTypeClass === 'input--dropdown'
 	const inputTypeClass = 'input--dropdown'
@@ -118,7 +166,7 @@ function toggleDropdown(event, input, iteratable) {
 		// console.log(event.target)
 	}
 }
-// /FAQ
+
 
 const dropdownInputs = document.querySelectorAll('.input--dropdown');
 dropdownInputs.forEach(input => {
@@ -127,10 +175,14 @@ dropdownInputs.forEach(input => {
   })
   input.click();
 })
+// /Add dropdowns to inputs with modificator
 
 
+// Fixing random page position
 document.querySelector('html').scrollTop = 0;
 
+
+// ANIMATE SELECED EELEMENTS
 
 const animatedElements = [
   {
@@ -214,7 +266,6 @@ const animatedElements = [
     animation: 'fadeInUp',
     hasDelay: true
   },
-
 ]
 
 let delay = 0;
@@ -225,7 +276,7 @@ animatedElements.forEach(el => {
       animated.classList.add('animate__animated', 'animate__' + el.animation, 'wow',)
       if (el.hasDelay) {
         delay += 0.5;
-        console.log(delay)
+        // console.log(delay)
         let delayTiming = `${delay}s`;
         animated.style.setProperty('--animate-delay', delayTiming);
         animated.style.setProperty('--animate-duration', '1s');
@@ -236,3 +287,4 @@ animatedElements.forEach(el => {
 })
 
 new WOW().init();
+// /ANIMATE SELECTED ELEMENTS
