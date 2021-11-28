@@ -72,7 +72,7 @@
 		padding-top: 0;
 	}
 	.conditions__desc {
-		margin-bottom: 27px;
+		margin-bottom: 32px;
 	}
 
 	.conditions__title {
@@ -80,6 +80,7 @@
 	}
 	.conditions-table {
 		margin-bottom: 34px;
+		padding-top: 5px;
 	}
 
 	.conditions-table-row__heading {
@@ -88,18 +89,26 @@
 
 	.condtions-table-row {
 		flex-direction: column;
-		padding-top: 17px;
-		padding-bottom: 17px;
+		padding-top: 18px;
+		padding-bottom: 18px;
 	}
 
 	.conditions-table-row__heading {
 		margin-bottom: 2px;
 	}
+
+	.conditions-table-row__desc {
+		line-height: 1.8;
+	}
+
 	.conditions__button {
 		max-width: 100%;
 		width: 100%;
 	}
 
+	.conditions__button {
+		font-size: 16px;
+	}
 }
 
 @media (min-width: 1199px) {

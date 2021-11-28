@@ -98,7 +98,7 @@
 		margin-bottom: 20px;
 	}
 	.programms-table-cell__type-name {
-		font: 14px;
+		font-size: 14px;
 	}
 	.programms-table__head {
 		display: none;
@@ -282,7 +282,15 @@
 	.programms-table__button {
 		margin-top: 15px;
 	}
-
+	.programms-table-cell__type {
+		margin-bottom: 4px;
+	}
+	// .programms-table-cell__number {
+	// 	font-size: 16px;
+	// }
+	.programms-table-cell {
+		margin-bottom: 16px;
+	}
 }
 
 

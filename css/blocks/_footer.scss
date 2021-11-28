@@ -122,4 +122,37 @@
 		display: flex;
 		flex-direction: column;
 	}
+
+	.footer-branding-logo {
+		margin-top: 45px;
+	}
+
+	.footer-branding {
+		margin-bottom: 29px;
+	}
+
+	.footer-about-contacts__address,
+	.footer-about--license,
+	.footer-about__name,
+	.footer-about__slogan {
+		font-size: 16px;
+	}
+
+	.footer-about-contacts__address {
+		line-height: 1.7;
+	}
+
+	.footer-about-contacts__phones {
+		font-size: 16px;
+	}
+	.footer-about-contacts__phone {
+		display: block;
+	}
+	.footer-about-contacts__emails {
+		font-size: 16px;
+	}
+	.footer-copy-links__link {
+		margin-bottom: 8px;
+	}
+
 }
