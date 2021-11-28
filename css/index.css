@@ -1219,12 +1219,19 @@ body {
 
 .header {
   z-index: calc(var(--z-popup) - 1);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.header.scrolled {
+  background-color: #fff;
 }
 
 .container--header {
@@ -3484,6 +3491,10 @@ body {
 }
 
 .programms-triangles--mobile {
+  display: none;
+}
+
+.programms-table-cell__hint {
   display: none;
 }
 

@@ -288,3 +288,73 @@ animatedElements.forEach(el => {
 
 new WOW().init();
 // /ANIMATE SELECTED ELEMENTS
+
+// header coloring
+const header = document.querySelector('.header');
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset > 50) {
+    if  (!header.classList.value.includes('scrolled')) {
+      header.classList.add('scrolled')
+    }
+  } else {
+    header.classList.remove('scrolled')
+  }
+})
+// /header coloring
+
+const parallaxed = document.querySelectorAll('.b_parallax')
+parallaxed.forEach(item => {
+  item.style.transition = `all 0.3s ease`;
+})
+
+window.addEventListener('mousemove', (event) => {
+  let xOffset = 0.5 - (event.clientX + 0) / window.innerWidth / 2;
+  let yOffset = 0.5 - (event.clientY + 0) / window.innerHeight / 2;
+  console.log(`
+    x: ${xOffset}
+    y: ${yOffset}
+  `)
+  let comparableHeight = window.innerHeight / 3.5;
+  parallaxed.forEach(item => {
+    if (comparableHeight > item.getBoundingClientRect().top) {
+      var offset = 5 + parseInt(item.getBoundingClientRect().top);
+      let translate = "translate3d("+Math.round(xOffset*offset)+"px,"+Math.round(yOffset*offset)+"px,0px)";
+      item.style.transform = translate;
+      // console.log(translate)
+    }
+  })
+})
+
+// window.addEventListener('mousemove', function(event){
+//     if(typeof movewait != 'undefined'){
+//         clearTimeout(movewait);
+//     }
+//     movewait = setTimeout(function(){
+//       console.log(event.clientX, '/', event.clientY)
+//       let xOffset = event.clientX / 10;
+//       let yOffset = event.clientY / 10;
+//       parallaxed.forEach(item => {
+//         item.style.transform = `translateX(${xOffset}px) translateY(${yOffset}px)`
+//       })
+//     },200);
+// });
+
+  // $(window).on('mousemove',function(e){
+  //   var width=$(window).width(),
+  //       height=$(window).height(),
+  //       offsetX=0.5-e.pageX/width,
+  //       offsetY=0.5-e.pageY/height,
+  //       $parallaxItem=$('.parallax');
+
+  //   $parallaxItem.each(function(i,el){
+  //     var offset = parseInt($(el).data('offset'));
+  //     let translate = "translate3d("+Math.round(offsetX*offset)+"px,"+Math.round(offsetY*offset)+"px,0px)";
+  //     $(el).css({
+  //       '-webkit-transform':translate,
+  //       'transform':translate,
+  //       '-moz-transform':translate
+  //     });
+  //   });
+  // });
+
+// news videos to open in popup

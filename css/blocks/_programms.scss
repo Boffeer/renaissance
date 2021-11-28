@@ -164,6 +164,9 @@
 .programms-triangles--mobile {
 	display: none;
 }
+.programms-table-cell__hint {
+	display: none;
+}
 
 @media (max-width: 768px) {
 	.programms {
@@ -262,6 +265,7 @@
 		margin-bottom: 10px;
 	}
 }
+
 
 @media (min-width: 1100px) {
 	.programms-filter {
