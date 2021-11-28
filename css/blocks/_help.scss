@@ -47,7 +47,7 @@
 
 @media (max-width: 576px) {
 	.help {
-		padding-top: 40px;
+		padding-top: 10px;
 	}
 	.help__wrap {
 		flex-direction: column-reverse;
@@ -86,18 +86,20 @@
 	}
 
 	.help__inner {
-		padding-top: 10px;
-		padding-left: 37px;
-		padding-right: 37px;
-		margin-bottom: 30px;
+		padding-top: 13px;
+    padding-left: 29px;
+    padding-right: 30px;
+    margin-bottom: 30px;
 	}
 
 	.help__desc {
 		font-size: 16px;
+		line-height: 1.65;
 	}
 
 	.help__button {
 		width: 100%;
+		font-size: 16px;
 	}
 
 

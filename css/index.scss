@@ -1120,6 +1120,13 @@ body {
 			}
 		}
 	}
+	.skewed-bgs--top .skewed-bgs__item--grey {
+		top: 1030px;
+	}
+	.skewed-bgs--top .skewed-bgs__item--accent {
+		top: 1055px;
+		height: 785px;
+	}
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
