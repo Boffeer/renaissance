@@ -12,7 +12,7 @@
 	display: grid;
   grid-template-columns: 0.7fr 1.2fr 1fr;
   grid-template-rows: 0.5fr 1.5fr 1fr;
-  gap: 110px 50px;
+  gap: 100px 50px;
   grid-auto-flow: row;
   grid-template-areas:
     "title articles articles"
@@ -31,7 +31,7 @@
 }
 
 .articles__title {
-	margin-bottom: 23px;
+	margin-bottom: 34px;
 }
 .articles__desc {
 	margin-bottom: 23px;
@@ -41,7 +41,7 @@
 	max-width: 452px;
 	min-width: 280px;
 	width: 48%;
-	margin-bottom: 90px;
+	margin-bottom: 80px;
 }
 .articles-list-article--gutter {
 	width: 40px;
@@ -56,13 +56,15 @@
 }
 .articles-list-article-tags__tag {
 	display: inline-block;
-	padding: 4px 8px;
+	// padding: 4px 8px;
+	padding: 4px;
 	font-weight: 400;
 	font-size: 13px;
+	letter-spacing: 0.03em;
 	background-color: #F0F2F7;
 	margin-bottom: 8px;
 	text-transform: uppercase;
-	line-height: 1;
+	line-height: 15px;
 }
 
 .articles-list-article-tags__tag:not(:last-child) {
@@ -80,7 +82,7 @@
 }
 
 .articles-list-article__desc {
-	line-height: 1.6;
+	line-height: 1.7;
 	margin-bottom: 16px;
 }
 
@@ -155,7 +157,8 @@
 
 .articles-about-list-card {
 	padding-left: 36px;
-	margin-bottom: 32px;
+	// margin-bottom: 32px;
+	margin-bottom: 28px;
 	position: relative;
 
 	&:before {

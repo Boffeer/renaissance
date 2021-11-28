@@ -47,6 +47,7 @@
 	transform-origin: center center;
 	pointer-events: none;
 	color: #50287D;
+	font-family: initial;
 }
 .opened .faq-cards-card-question__closer {
 	transform: translateY(-50%) rotate(45deg);
@@ -108,7 +109,6 @@
 		margin-bottom: 34px;
 	}
 	.faq-cards-card-question__closer {
-		font-family: initial;
 		top: 50%;
     right: 16px;
 		font-size: 44px;

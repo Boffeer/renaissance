@@ -24,7 +24,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	margin-bottom: 30px;
+	margin-bottom: 33px;
 	width: 100%;
 }
 .footer-branding-logo {
@@ -50,7 +50,12 @@
 }
 .footer-about__slogan {
 	font-weight: 400;
-	margin-bottom: 50px;
+	margin-bottom: 35px;
+	line-height: 1.65;
+}
+
+.footer-about__name {
+	margin-bottom: 5px;
 }
 
 .footer__legal {
@@ -58,7 +63,7 @@
 	max-width: 610px;
 	font-weight: 400;
 	font-size: 12px;
-	line-height: 1.6;
+	line-height: 1.65;
 }
 
 .footer-about-contacts {
@@ -69,9 +74,12 @@
 
 .footer-about-contacts__phones {
 	margin-bottom: 5px;
+	line-height: 1.6;
 }
 .footer-about-contacts__address {
 	user-select: all;
+	line-height: 1.85;
+	margin-bottom: 5px;
 }
 
 .footer-copy {
@@ -79,7 +87,7 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	padding-top: 55px;
+	padding-top: 35px;
 	padding-bottom: 45px;
 }
 .footer-copy__right,

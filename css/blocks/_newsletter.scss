@@ -1,12 +1,13 @@
 .newsletter {
-	padding-top: 40px;
+	// padding-top: 40px;
+	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-bottom: 90px;
 	position: relative;
 }
 .container--newsletter {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 	position: relative;
 	z-index: 2;

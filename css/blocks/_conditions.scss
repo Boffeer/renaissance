@@ -1,5 +1,5 @@
 .conditions {
-	padding-top: 70px;
+	padding-top: 80px;
 	padding-bottom: 34px;
 	position: relative;
 	.container {
@@ -69,12 +69,15 @@
 
 @media (max-width: 576px) {
 	.conditions {
-		padding-top: 20px;
+		padding-top: 0;
 	}
 	.conditions__desc {
 		margin-bottom: 27px;
 	}
 
+	.conditions__title {
+		margin-bottom: 23px;
+	}
 	.conditions-table {
 		margin-bottom: 34px;
 	}
@@ -114,5 +117,9 @@
     right: -600px;
     width: 1300px;
     height: 1400px;
+	}
+	.buttons__container--condtions {
+		padding-right: 35px;
+		padding-left: 35px;
 	}
 }

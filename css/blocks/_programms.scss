@@ -12,14 +12,15 @@
 	grid-template-columns: 375px 174px 111px 200px 210px;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 20px;
+	// margin-bottom: 20px;
+	margin-bottom: 16px;
 }
 
 .programms-table__body {
 	.programms-table__row {
 		background-color: rgba(240, 242, 247, 0.45);
 		// padding: 24px 32px;
-		padding: 32px 22px 32px 38px;
+		padding: 25px 22px 32px 38px;
 	}
 }
 .programms-table-heading__desc {
@@ -31,6 +32,7 @@
 	font-size: 16px;
 	color: var(--c-text-p);
 	margin-bottom: 30px;
+	margin-bottom: 36px;
 }
 
 .programms-table__head {
@@ -43,7 +45,7 @@
 
 .programms-table-heading__title {
 	font-size: 18px;
-	margin-bottom: 12px;
+	margin-bottom: 15px;
 	color: var(--c-text-regular);
 }
 
@@ -201,6 +203,9 @@
 
 
 @media (max-width: 576px) {
+	.programms {
+		padding-top: 0;
+	}
 	.programms-triangles--mobile {
 		display: block;
 		position: absolute;
@@ -264,6 +269,20 @@
 	.programms-filter__amount {
 		margin-bottom: 10px;
 	}
+	.programms-filter__button {
+		margin-bottom: 13px;
+	}
+	.programms-filter {
+		margin-bottom: 42px;
+	}
+	.programms-table__body .programms-table__row {
+		padding-top: 32px;
+		margin-bottom: 28px;
+	}
+	.programms-table__button {
+		margin-top: 15px;
+	}
+
 }
 
 
