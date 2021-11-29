@@ -450,6 +450,7 @@ body {
 	font-weight: 500;
 	display: inline-block;
 	border-bottom: 1px solid var(--c-text-p);
+	transition: all 0.3s ease;
 }
 .link-more:hover {
 	color: var(--c-secondary);
@@ -860,7 +861,9 @@ body {
 	.conditions-table-row__heading {
 		max-width: 194px;
 	}
-
+	.scroll-blocked {
+		overflow: hidden;
+	}
 }
 
 @media (max-width: 810px) {
@@ -1059,7 +1062,7 @@ body {
 			height: 300px;
 		}
 		.bg-header {
-			height: 140vh;
+			height: 111vh;
 		}
 		.skewed-bgs--bottom {
 			bottom: unset;
@@ -1127,6 +1130,36 @@ body {
 		top: 1055px;
 		height: 785px;
 	}
+
+	.page-programm {
+		.skewed-bgs--top {
+			.skewed-bgs__item--white {
+				top: 515px;
+			}
+			.skewed-bgs__item--accent {
+				top: 511px;
+				transform: rotate(-16.08deg)
+			}
+			.skewed-bgs__item--grey {
+				height: 348px;
+				top: 502px;
+				transform: rotate(-19.8deg)
+			}
+		}
+	}
+
+	.page-programm {
+		.skewed-bgs--bottom.skewed-bgs--bottom-faq {
+			top: 1690px;
+			.skewed-bgs__item--accent {
+				transform: rotate(-19.8deg);
+			}
+			.skewed-bgs__item--grey {
+				transform: rotate(-17.21deg);
+			}
+		}
+	}
+
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
@@ -1138,6 +1171,39 @@ body {
 	}
 }
 
+
+@media(max-width: 380px) {
+	.page-programm {
+		.skewed-bgs--top {
+			.skewed-bgs__item--white {
+				top: 586px;
+			}
+			.skewed-bgs__item--accent {
+				top: 650px;
+				transform: rotate(-16.08deg)
+			}
+			.skewed-bgs__item--grey {
+				height: 348px;
+				top: 665px;
+				transform: rotate(-19.8deg)
+			}
+		}
+	}
+	.page-programm .skewed-bgs--bottom.skewed-bgs--bottom-faq {
+    top: 1780px;
+	}
+}
+@media(max-width: 375px) {
+	.page-programm .skewed-bgs--bottom.skewed-bgs--bottom-faq {
+    top: 1840px;
+	}
+	.page-programm .skewed-bgs--top .skewed-bgs__item--accent {
+		top: 583px;
+	}
+	.page-programm .skewed-bgs--top .skewed-bgs__item--grey {
+		top: 575px
+	}
+}
 @media(max-width: 374px) {
 	.buttons-set .button {
 		margin-bottom: 10px;
@@ -1167,6 +1233,9 @@ body {
 	}
 	.page-programm .skewed-bgs--bottom.skewed-bgs--bottom-mobile {
 		top: 3890px;
+	}
+	.page-programm .skewed-bgs--bottom.skewed-bgs--bottom-faq {
+    top: 1960px;
 	}
 }
 
@@ -1212,3 +1281,4 @@ body {
 @import "blocks/programms";
 @import "blocks/conditions";
 @import "blocks/faq";
+@import "blocks/backgrounds";

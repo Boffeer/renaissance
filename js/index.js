@@ -39,13 +39,16 @@ dropdowns.forEach((dropdown, index) => {
 // BURGER
 const burgerButton = document.querySelector('.header-burger');
 const burgerMenu = document.querySelector('.container--header');
+const body = document.querySelector('body');
 burgerButton.addEventListener('click', () => {
   if (burgerMenu.classList.value.includes('opened')) {
     burgerMenu.classList.remove('opened');
     burgerButton.classList.remove('opened');
+    body.classList.remove('scroll-blocked');
   } else {
     burgerMenu.classList.add('opened');
     burgerButton.classList.add('opened');
+    body.classList.add('scroll-blocked');
   }
 });
 // /Burger
@@ -73,26 +76,6 @@ if (anchors != undefined && anchors != null) {
   })
 }
 // /Smooth anchors
-
-/*
-// Scroll to top
-const scrollToTopButtons = document.querySelectorAll('.button-scroll-top');
-scrollToTopButtons.forEach(button => {
-  button.addEventListener('click', (event) => {
-    event.preventDefault();
-    // let currentPageOffset = document.querySelector('html').scrollTop;
-    let currentPageOffset = window.pageYOffset;
-    while (currentPageOffset > 1) {
-      setTimeout(() => {
-        window.requestAnimationFrame();
-        currentPageOffset = currentPageOffset - 10;
-        document.querySelector('html').scrollTop = currentPageOffset;
-      }, 1);
-    }
-  })
-});
-// /Scroll to top
-*/
 
 // Scroll to top v2
 function smoothScroll(targetElement, duration) {
@@ -133,7 +116,7 @@ const scrollToTopButtons = document.querySelectorAll('.button-scroll-top');
 scrollToTopButtons.forEach(button => {
   button.addEventListener('click', function (event) {
     event.preventDefault();
-    smoothScroll('html', 5500);
+    smoothScroll('html', 5000);
   })
 })
 

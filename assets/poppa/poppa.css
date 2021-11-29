@@ -102,8 +102,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #404040;
-  border-radius: 4px;
   -webkit-transition: all var(--transition-delay-base);
   transition: all var(--transition-delay-base);
   width: 50px;

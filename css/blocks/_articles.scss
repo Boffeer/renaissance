@@ -119,6 +119,10 @@
 
 .aritlces-list-article-media__video {
 	display: none;
+	border-radius: 0;
+	max-width: 1000px;
+	width: 100%;
+	height: 560px;
 }
 
 .articles-list-article-media__link {
@@ -303,6 +307,19 @@
 	}
 }
 
+@media (max-width: 992px) {
+	.aritlces-list-article-media__video {
+		max-width: 800px;
+		height: 450px;
+	}
+}
+
+@media (max-width: 767px) {
+	.aritlces-list-article-media__video {
+		height: 400px;
+	}
+}
+
 @media (max-width: 576px) {
 	.articles {
 		margin-bottom: 20px;
@@ -342,8 +359,19 @@
 	.articles-about-list-card {
 		margin-bottom: 35px;
 	}
+
+	.aritlces-list-article-media__video {
+		width: 470px;
+		height: 320px;
+	}
 }
 
+@media (max-width: 414px) {
+	.aritlces-list-article-media__video {
+		width: auto;
+		height: 200px;
+	}
+}
 @media (min-width: 992px) {
 	.articles-slider__pagination {
 		display: none;
