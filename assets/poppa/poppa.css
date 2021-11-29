@@ -108,7 +108,7 @@ html {
   height: 50px;
   top: 20px;
   right: 20px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 40px;
 }
 
@@ -276,7 +276,7 @@ html {
 .poppa--simple-text h6 {
   font-size: 24px;
   margin-bottom: 14px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.45;
   color: #333333;
 }
@@ -304,7 +304,7 @@ html {
   .poppa--simple-text h6 {
     font-size: 16px;
     margin-bottom: 14px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.25;
     color: #333333;
   }

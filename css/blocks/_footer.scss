@@ -11,6 +11,9 @@
 	a:hover {
 		color: var(--c-primary--hover);
 	}
+	.footer-about--license:hover {
+		border-bottom: 1px solid var(--c-primary--hover);
+	}
 }
 
 .container--footer {

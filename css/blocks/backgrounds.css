@@ -1,1 +1,9 @@
-/* No CSS *//*# sourceMappingURL=backgrounds.css.map */
+@media (max-width: 375px) {
+  .skewed-bgs--bottom {
+    top: 2490px;
+  }
+  .skewed-bgs--bottom .skewed-bgs__item--accent {
+    height: 1050px;
+  }
+}
+/*# sourceMappingURL=backgrounds.css.map */

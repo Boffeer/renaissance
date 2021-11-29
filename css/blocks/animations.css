@@ -25,13 +25,13 @@
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
-  60% {
+  50% {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
   }
   100% {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
@@ -40,13 +40,13 @@
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
-  60% {
+  50% {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
   }
   100% {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 /*# sourceMappingURL=animations.css.map */

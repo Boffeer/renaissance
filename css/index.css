@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  src: url("../fonts/Gerbera-Bold.woff2") format("woff2"), url("../fonts/Gerbera-Bold.woff") format("woff");
+  src: url("../fonts/Gerbera-Medium.woff2") format("woff2"), url("../fonts/Gerbera-Medium.woff") format("woff");
   font-family: "Gerbera";
   font-weight: 600;
   font-style: normal;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  src: url("../fonts/Gerbera-Black.woff2") format("woff2"), url("../fonts/Gerbera-Black.woff") format("woff");
+  src: url("../fonts/Gerbera-Bold.woff2") format("woff2"), url("../fonts/Gerbera-Bold.woff") format("woff");
   font-family: "Gerbera";
   font-weight: 700;
   font-style: normal;
@@ -99,25 +99,25 @@ h6 {
 }
 
 h1 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: var(--fz-h1);
   line-height: 1.11;
 }
 
 h2 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: var(--fz-h2);
   line-height: 1.11;
 }
 
 h3 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: var(--fz-h3);
   line-height: 1.11;
 }
 
 h4 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: var(--fz-h4);
   line-height: 1.11;
 }
@@ -145,9 +145,10 @@ body {
 }
 
 .triangle {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
   pointer-events: none;
+  opacity: 1;
 }
 
 .triangle--hidden {
@@ -235,7 +236,7 @@ body {
           justify-content: center;
   border-radius: 6px;
   padding: 16px 24px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: var(--fz-button);
   line-height: 1.5;
   -webkit-transition: 0.3s all ease-out;
@@ -252,8 +253,6 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-transition: 0;
-  transition: 0;
   opacity: 0;
   -webkit-transition: 0.3s all ease-out;
   transition: 0.3s all ease-out;
@@ -287,6 +286,7 @@ body {
 }
 
 .button--secondary {
+  font-weight: 400;
   border: 1px solid var(--c-ghost);
 }
 
@@ -473,7 +473,7 @@ body {
 }
 
 .link-more {
-  font-weight: 500;
+  font-weight: 600;
   display: inline-block;
   border-bottom: 1px solid var(--c-text-p);
   -webkit-transition: all 0.3s ease;
@@ -1278,13 +1278,13 @@ body {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
-  60% {
+  50% {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
   }
   100% {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
@@ -1293,13 +1293,13 @@ body {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
-  60% {
+  50% {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
   }
   100% {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
@@ -1400,6 +1400,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .header-nav-dropdown__name::after {
@@ -1412,6 +1414,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .header-nav-dropdown__name:hover {
@@ -1572,8 +1576,6 @@ body {
   }
   .header-nav-dropdown__name {
     color: var(--c-secondary);
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
   }
   .container--header.opened .header__menu {
     display: -webkit-box;
@@ -1627,7 +1629,7 @@ body {
     display: block;
   }
   .header-nav-dropdown__name {
-    font-weight: 500;
+    font-weight: 600;
   }
 }
 
@@ -1747,7 +1749,7 @@ body {
 .text--curve-underline {
   color: var(--c-secondary);
   position: relative;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .text--curve-underline::after {
@@ -2168,7 +2170,7 @@ body {
   }
   .about-row-desc__subject {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
   }
   .about-row--only-text {
     margin-bottom: 20px;
@@ -2251,6 +2253,12 @@ body {
   }
 }
 
+@media (min-width: 1300px) {
+  .about-row__img--clouded::before {
+    top: 40%;
+  }
+}
+
 .services {
   margin-top: -70px;
   margin-bottom: 20px;
@@ -2278,13 +2286,19 @@ body {
 }
 
 .services-list-card__icon {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-animation: loop-translate-y 1.5s infinite alternate;
+          animation: loop-translate-y 1.5s infinite alternate;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .services-list-card:hover .services-list-card__icon {
-  -webkit-animation: loop-translate-y 1s infinite alternate;
-          animation: loop-translate-y 1s infinite alternate;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 
 .services-list-card__inner {
@@ -2598,6 +2612,9 @@ body {
 
 @media (min-width: 992px) {
   .services-slider__pagination {
+    display: none;
+  }
+  .swiper-slider__buttons.services-slider__buttons {
     display: none;
   }
 }
@@ -3390,6 +3407,10 @@ body {
   color: var(--c-primary--hover);
 }
 
+.footer .footer-about--license:hover {
+  border-bottom: 1px solid var(--c-primary--hover);
+}
+
 .container--footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3825,7 +3846,7 @@ body {
 .steps-slider-slide__step {
   color: var(--c-primary);
   font-size: 56px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 45px;
 }
 
@@ -4050,7 +4071,7 @@ body {
   font-size: 18px;
   margin-bottom: 15px;
   color: var(--c-text-regular);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .programms-table-cell__number {
@@ -4631,6 +4652,15 @@ body {
   }
   .faq-cards-card-question__closer {
     right: 23px;
+  }
+}
+
+@media (max-width: 375px) {
+  .skewed-bgs--bottom {
+    top: 2490px;
+  }
+  .skewed-bgs--bottom .skewed-bgs__item--accent {
+    height: 1050px;
   }
 }
 /*# sourceMappingURL=index.css.map */

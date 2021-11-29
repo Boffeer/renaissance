@@ -195,7 +195,7 @@
 
 	.about-row-desc__subject {
 		font-size: 16px;
-		font-weight: 500;
+		font-weight: 600;
 	}
 
 	.about-row--only-text {
@@ -289,5 +289,11 @@
 		.about-row-desc__title {
 			margin-bottom: 262px;
 		}
+	}
+}
+
+@media (min-width: 1300px) {
+	.about-row__img--clouded::before {
+		top: 40%;
 	}
 }

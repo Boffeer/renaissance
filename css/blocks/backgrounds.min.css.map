@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,MAAM,EAAE,SAAS,EAAE,KAAK,EACvB,AAAA,mBAAmB,AAAC,CACnB,GAAG,CAAE,MAAM,CAKX,AAND,AAGC,mBAHkB,CAGlB,yBAAyB,AAAC,CACzB,MAAM,CAAE,MAAM,CACd",
     "sources": [
         "backgrounds.scss"
     ],

@@ -20,23 +20,32 @@
 
 @font-face {
 	src:
-		url("../fonts/Gerbera-Bold.woff2") format("woff2"),
-		url("../fonts/Gerbera-Bold.woff") format("woff");
+		url("../fonts/Gerbera-Medium.woff2") format("woff2"),
+		url("../fonts/Gerbera-Medium.woff") format("woff");
 	font-family: "Gerbera";
 	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
 }
-
 @font-face {
 	src:
-		url("../fonts/Gerbera-Black.woff2") format("woff2"),
-		url("../fonts/Gerbera-Black.woff") format("woff");
+		url("../fonts/Gerbera-Bold.woff2") format("woff2"),
+		url("../fonts/Gerbera-Bold.woff") format("woff");
 	font-family: "Gerbera";
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
 }
+
+// @font-face {
+// 	src:
+// 		url("../fonts/Gerbera-Black.woff2") format("woff2"),
+// 		url("../fonts/Gerbera-Black.woff") format("woff");
+// 	font-family: "Gerbera";
+// 	font-weight: 700;
+// 	font-style: normal;
+// 	font-display: swap;
+// }
 :root {
 	--c-primary: #d3d726;
 	--c-primary--hover: #e9ed24;
@@ -118,22 +127,22 @@ h6 {
 	font-weight: 400;
 }
 h1 {
-	font-weight: 500;
+	font-weight: 600;
 	font-size: var(--fz-h1);
 	line-height: 1.11;
 }
 h2 {
-	font-weight: 500;
+	font-weight: 600;
 	font-size: var(--fz-h2);
 	line-height: 1.11;
 }
 h3 {
-	font-weight: 500;
+	font-weight: 600;
 	font-size: var(--fz-h3);
 	line-height: 1.11;
 }
 h4 {
-	font-weight: 500;
+	font-weight: 600;
 	font-size: var(--fz-h4);
 	line-height: 1.11;
 }
@@ -156,8 +165,9 @@ body {
 	position: relative;
 }
 .triangle {
-	transition: all 0.3s;
+	transition: all 1s ease-out;
 	pointer-events: none;
+	opacity: 1;
 
 	&--hidden {
 		opacity: 0 !important;
@@ -227,7 +237,7 @@ body {
 	justify-content: center;
 	border-radius: 6px;
 	padding: 16px 24px;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: var(--fz-button);
 	line-height: 1.5;
 	transition: 0.3s all ease-out;
@@ -242,7 +252,6 @@ body {
 		position: absolute;
 		left: 0;
 		top: 0;
-		transition: 0;
 		opacity: 0;
 		transition: 0.3s all ease-out;
 		z-index: 0;
@@ -272,6 +281,7 @@ body {
 	}
 }
 .button--secondary {
+	font-weight: 400;
 	border: 1px solid var(--c-ghost);
 	&:before {
 		background-color: var(--c-ghost);
@@ -423,7 +433,7 @@ body {
 }
 
 .link-more {
-	font-weight: 500;
+	font-weight: 600;
 	display: inline-block;
 	border-bottom: 1px solid var(--c-text-p);
 	transition: all 0.3s ease;
