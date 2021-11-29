@@ -145,3 +145,54 @@ window.addEventListener('resize', () => {
 		}, 2000);
 	})
 });
+
+
+window.addEventListener('DOMContentLoaded', (event) => {
+	const articleMedia = document.querySelectorAll('.articles-list-article-media');
+
+	articleMedia.forEach((media, index) => {
+		let ytId = media.getAttribute('data-yt-id');
+		let ytThumbUrl = `https://i.ytimg.com/vi/${ytId}/hq720.jpg`;
+		let ytVideoUrl = `https://www.youtube.com/embed/${ytId}/?autoplay=1&mute=1`;
+		// let ytVideoUrl = `https://www.youtube.com/watch?v=${ytId}`;
+
+		let thumb = media.querySelector('.articles-list-article-media__thumb');
+		let video = media.querySelector('.aritlces-list-article-media__video');
+		let play = media.querySelector('.articles-list-article-media__play');
+
+		video.setAttribute('data-src', ytVideoUrl);
+		thumb.src = ytThumbUrl;
+
+		let videoClass = `js_articles__video--${index}`;
+		let playClass = `js_articles__play--${index}`;
+		video.classList.add(videoClass)
+		play.classList.add(playClass)
+
+		console.log(videoClass, playClass)
+
+		function onOpenFunction() {
+			let ytVideo = video
+			let ytSrc = ytVideo.getAttribute('data-src')
+			ytVideo.setAttribute('src', ytSrc);
+			ytVideo.style.display = 'block';
+		}
+		function onCloseFunction() {
+			let ytVideo = video
+			let ytSrc = ytVideo.getAttribute('data-src')
+			ytVideo.removeAttribute('src', ytSrc);
+		}
+
+		poppa({
+			pop: `.${videoClass}`,
+			clickTrigger: `.${playClass}`,
+			onOpen: onOpenFunction,
+			onClose: onCloseFunction,
+		})
+	})
+
+});
+
+// const articlePlay = document.querySelectorAll('.aritlces-list-article-media__video')
+// const articleVideos = document.querySelectorAll('.aritlces-list-article-media__video')
+
+// articleVideos.forEach((video, index) => video.classList.add(`pop-video-${index}`))
