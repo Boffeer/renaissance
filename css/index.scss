@@ -1264,6 +1264,8 @@ body {
 	}
 }
 
+@import "blocks/animations";
+
 @import "blocks/header";
 @import "blocks/hero";
 @import "blocks/interrupter";
@@ -1281,4 +1283,5 @@ body {
 @import "blocks/programms";
 @import "blocks/conditions";
 @import "blocks/faq";
+
 @import "blocks/backgrounds";

@@ -25,7 +25,8 @@
 	transition: all 0.3s ease;
 }
 .services-list-card:hover .services-list-card__icon {
-	transform: scale(1.3);
+	// transform: scale(1.3);
+	animation: loop-translate-y 1s infinite alternate;
 }
 
 .services-list-card__inner {
