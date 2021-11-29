@@ -47,12 +47,31 @@ const resizeConstructors = [
 		swiper: '.services-slider',
 		wrapper: '.services-list',
 		slide: '.services-list-card',
-		pagination: '.services-slider__pagination',
+		// pagination: '.services-slider__pagination',
 		masonry: '.services-list',
 		masonryCard: '.services-list-card',
 		gutter: '.services-list-card--gutter',
 		variableSlider: servicesSlider,
 		variableMasonry: servicesMasonry,
+		buttons: '.services-slider__buttons',
+		buttonNext: '.services-slider__button-next',
+		buttonPrev: '.services-slider__button-prev',
+		onSlideChange: function(slider, buttons) {
+			let activeIndex = slider.activeIndex;
+			let slides = [...document.querySelector(this.swiper).querySelectorAll('.swiper-slide')];
+			setTimeout(()=> {
+				let sliderNumber = slides[activeIndex].ariaLabel
+				document.querySelector(buttons).setAttribute('data-page', sliderNumber)
+			}, 100)
+		},
+		onInit: function(slider, buttons) {
+			let activeIndex = slider.activeIndex;
+			let slides = [...document.querySelector(this.swiper).querySelectorAll('.swiper-slide')];
+			setTimeout(()=> {
+				let sliderNumber = slides[activeIndex].ariaLabel
+				document.querySelector(buttons).setAttribute('data-page', sliderNumber)
+			}, 100)
+		}
 	},
 	{
 		breakpoint: 992,
@@ -99,12 +118,29 @@ function useCorrectServicesLayout($) {
 		});
 
 		$.variableSlider = new Swiper($.swiper, {
+			navigation: {
+				nextEl: $.buttonNext,
+				prevEl: $.buttonPrev,
+			},
 			pagination: {
 				el: $.pagination
 			},
 			autoHeight: true,
 			spaceBetween: 50,
+			on: {
+				transitionEnd: function() {
+					if ($.onSlideChange) {
+						$.onSlideChange(this, $.buttons);
+					}
+				},
+				init: function() {
+					if ($.onInit) {
+						$.onInit(this, $.buttons);
+					}
+				}
+			}
 		});
+
 	} else {
 		if ($.variableSlider != undefined) {
 			$.variableSlider.destroy(true, true);

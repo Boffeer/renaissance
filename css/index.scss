@@ -157,6 +157,7 @@ body {
 }
 .triangle {
 	transition: all 0.3s;
+	pointer-events: none;
 
 	&--hidden {
 		opacity: 0 !important;

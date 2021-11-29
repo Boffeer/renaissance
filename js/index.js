@@ -384,7 +384,7 @@ let triangles = [...document.querySelectorAll('.triangle')];
 let triangleActiveClass = 'triangle--hidden';
 function handleTrianglesAppear(spreadElements) {
 	documentHeight = window.innerHeight;
-	centerDistance = documentHeight / 2;
+	centerDistance = documentHeight / 1.5;
 	spreadElements.map((item) => {
     item.classList.add(triangleActiveClass)
 
