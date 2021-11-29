@@ -17,7 +17,7 @@
 @font-face {
   src: url("../fonts/Gerbera-Medium.woff2") format("woff2"), url("../fonts/Gerbera-Medium.woff") format("woff");
   font-family: "Gerbera";
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -99,25 +99,25 @@ h6 {
 }
 
 h1 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: var(--fz-h1);
   line-height: 1.11;
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: var(--fz-h2);
   line-height: 1.11;
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: var(--fz-h3);
   line-height: 1.11;
 }
 
 h4 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: var(--fz-h4);
   line-height: 1.11;
 }
@@ -236,7 +236,7 @@ body {
           justify-content: center;
   border-radius: 6px;
   padding: 16px 24px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: var(--fz-button);
   line-height: 1.5;
   -webkit-transition: 0.3s all ease-out;
@@ -473,7 +473,7 @@ body {
 }
 
 .link-more {
-  font-weight: 600;
+  font-weight: 500;
   display: inline-block;
   border-bottom: 1px solid var(--c-text-p);
   -webkit-transition: all 0.3s ease;
@@ -1331,7 +1331,7 @@ body {
 
 .header__phone {
   margin-left: auto;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--c-text-regular);
 }
 
@@ -1629,7 +1629,7 @@ body {
     display: block;
   }
   .header-nav-dropdown__name {
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 
@@ -2057,14 +2057,14 @@ body {
 .about-row-desc__title {
   font-size: var(--fz-h2);
   margin-bottom: 24px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
 }
 
 .about-row-desc__caption {
   font-size: var(--fz-h4);
   margin-bottom: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .about-row-desc__text {
@@ -2170,7 +2170,7 @@ body {
   }
   .about-row-desc__subject {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
   }
   .about-row--only-text {
     margin-bottom: 20px;
@@ -3846,7 +3846,7 @@ body {
 .steps-slider-slide__step {
   color: var(--c-primary);
   font-size: 56px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 45px;
 }
 
@@ -4071,7 +4071,7 @@ body {
   font-size: 18px;
   margin-bottom: 15px;
   color: var(--c-text-regular);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .programms-table-cell__number {
