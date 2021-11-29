@@ -37,6 +37,7 @@
 .hero-clients {
 	margin-bottom: 80px;
 	font-size: var(--fz-h3-card);
+	font-weight: 400;
 }
 .text--curve-underline {
 	color: var(--c-secondary);
@@ -109,6 +110,9 @@
 @media (max-width: 576px) {
 	.hero-img__wrap {
 		align-self: flex-start;
+	}
+	.hero__button {
+		font-size: 14px;
 	}
 
 	.hero-offer__title {

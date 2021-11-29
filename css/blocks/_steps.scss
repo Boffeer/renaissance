@@ -18,6 +18,7 @@
 .steps-slider-slide__title {
 	font-size: 28px;
 	margin-bottom: 24px;
+	font-weight: 400;
 }
 .steps-slider-slide__step {
 	color: var(--c-primary);
@@ -65,6 +66,10 @@
 }
 .steps-slider__arrow--prev {
 	transform: rotate(-90deg)
+}
+
+.steps-slider-slide__desc {
+	font-weight: 400;
 }
 
 .steps-slider__button {

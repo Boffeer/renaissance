@@ -115,25 +115,25 @@ h5,
 h6 {
 	margin: 0;
 	padding: 0;
-	font-weight: 500;
+	font-weight: 400;
 }
 h1 {
-	font-weight: 600;
+	font-weight: 500;
 	font-size: var(--fz-h1);
 	line-height: 1.11;
 }
 h2 {
-	font-weight: 600;
+	font-weight: 500;
 	font-size: var(--fz-h2);
 	line-height: 1.11;
 }
 h3 {
-	font-weight: 600;
+	font-weight: 500;
 	font-size: var(--fz-h3);
 	line-height: 1.11;
 }
 h4 {
-	font-weight: 600;
+	font-weight: 500;
 	font-size: var(--fz-h4);
 	line-height: 1.11;
 }
@@ -251,7 +251,7 @@ body {
 	justify-content: center;
 	border-radius: 6px;
 	padding: 16px 24px;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: var(--fz-button);
 	line-height: 1.5;
 	transition: 0.3s all ease-out;
@@ -447,7 +447,7 @@ body {
 }
 
 .link-more {
-	font-weight: 600;
+	font-weight: 500;
 	display: inline-block;
 	border-bottom: 1px solid var(--c-text-p);
 }
@@ -889,7 +889,7 @@ body {
 	}
 	.button {
 		padding: 15px 20px;
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.button__icon {
