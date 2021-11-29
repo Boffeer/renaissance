@@ -34,6 +34,30 @@
 		width: 100%;
 	}
 }
+.about-row__img--clouded {
+	position: relative;
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		width: 20%;
+		height: 50px;
+		background-image: url(../img/styling/cloud-flat.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		animation: loop-translate-x 4s infinite alternate;
+	}
+	&:after {
+		right: 0;
+		left: unset;
+		top: 22%;
+	}
+}
+
 .about-row--only-text {
 	align-items: center;
 	align-items: flex-start;

@@ -155,37 +155,12 @@ body {
 	line-height: 1.5;
 	position: relative;
 }
-.form-privacy {
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	width: 100%;
-	&__checkbox {
-		position: relative;
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		margin-right: 10px;
-		border-radius: 2px;
-		width: 15px;
-		height: 15px;
-		background-color: rgb(130, 130, 130);
-		cursor: pointer;
-		&::after {
-			content: "";
-			position: absolute;
-			display: inline-block;
-			border-radius: 50%;
-			width: 4px;
-			height: 4px;
-		}
+.triangle {
+	transition: all 0.3s;
+
+	&--hidden {
+		opacity: 0 !important;
 	}
-}
-.form-privacy__checkbox-hidden:checked + .form-privacy__checkbox {
-	background-image: url("../img/form/form-check.svg");
-	background-position: center;
-	background-size: 70%;
-	background-repeat: no-repeat;
 }
 .fixed {
 	position: fixed;
@@ -1263,6 +1238,7 @@ body {
 		}
 	}
 }
+
 
 @import "blocks/animations";
 

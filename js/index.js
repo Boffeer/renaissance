@@ -379,3 +379,26 @@ document.addEventListener('click', (event) => {
 })
 
 // /open menu by click
+
+let triangles = [...document.querySelectorAll('.triangle')];
+let triangleActiveClass = 'triangle--hidden';
+function handleTrianglesAppear(spreadElements) {
+	documentHeight = window.innerHeight;
+	centerDistance = documentHeight / 2;
+	spreadElements.map((item) => {
+    item.classList.add(triangleActiveClass)
+
+		if (item.getBoundingClientRect().top < centerDistance) {
+			item.classList.remove(triangleActiveClass)
+		} else if (item.getBoundingClientRect().top > centerDistance - 30) {
+			item.classList.add(triangleActiveClass)
+		}
+	})
+}
+document.addEventListener('scroll', function() {
+	handleTrianglesAppear(triangles);
+});
+
+setTimeout(() => {
+  handleTrianglesAppear(triangles);
+}, 200)

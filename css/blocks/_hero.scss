@@ -43,7 +43,7 @@
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
-		animation: loop-translate-y 2s infinite alternate;
+		animation: loop-translate-y 5s infinite alternate;
 	}
 
 	&:after {
@@ -58,7 +58,7 @@
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
-		animation: loop-translate-x 2.2s infinite alternate;
+		animation: loop-translate-x 4.2s infinite alternate;
 	}
 }
 .hero__buttons-set {
@@ -101,6 +101,9 @@
 	}
 }
 @media (max-width: 1300px) {
+	.hero-img__wrap:before {
+		width: 100px;
+	}
 	.hero-img__wrap {
     max-width: 594px;
 	}
@@ -112,6 +115,18 @@
 @media (max-width: 991px) {
 	:root {
 		--fz-h1: 40px;
+	}
+	.hero-img__wrap:before {
+		width: 100px;
+    top: 50px;
+    left: 125px;
+		height: 216px;
+	}
+	.hero-img__wrap:after {
+		top: 100px;
+    left: 220px;
+    width: 100px;
+    height: 100px;
 	}
 	.hero {
 		padding-top: 104px;
@@ -133,6 +148,16 @@
 }
 
 @media (max-width: 768px) {
+	.hero-img__wrap:before {
+		left: 127px;
+    height: 176px;
+	}
+	.hero-img__wrap:after {
+		top: 70px;
+    left: 220px;
+    width: 70px;
+    height: 90px;
+	}
 	.hero {
 		padding-top: 50px;
 	}
@@ -140,6 +165,9 @@
 @media (max-width: 576px) {
 	.hero-img__wrap {
 		align-self: flex-start;
+	}
+	.hero-img__wrap:before {
+    left: 137px;
 	}
 	.hero__button {
 		font-size: 14px;

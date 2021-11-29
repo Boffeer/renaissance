@@ -39,9 +39,56 @@
     right: -235px;
 		z-index: -1;
 	}
+	&:after,
+	&:before {
+		content: "";
+		display: block;
+		width: 20%;
+		height: 50px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		position: absolute;
+		animation: loop-translate-x 6s infinite alternate;
+		z-index: 2;
+	}
+	&:before {
+		background-image: url(../img/help/cloud-left.svg);
+		top: 54%;
+    left: 20px;
+    width: 26%;
+	}
+	&:after {
+		width: 17%;
+		height: 30px;
+		top: 25%;
+		right: 0;
+		background-image: url(../img/help/cloud-right.svg);
+	}
 }
 .help-imgs__img {
 	width: 100%;
+}
+.help-imgs__img--hand {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	z-index: 1;
+	transform: translateY(100px);
+	opacity: 0;
+	transition: all 0.3s 0.3s;
+}
+.help-imgs__img--hand.animated {
+	transform: translateY(0);
+	opacity: 1;
+}
+.help-imgs__img--bg {
+	margin-top: 20px;
 }
 
 
