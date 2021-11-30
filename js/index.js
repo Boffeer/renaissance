@@ -170,39 +170,39 @@ document.querySelector('html').scrollTop = 0;
 // ANIMATE SELECED EELEMENTS
 
 const animatedElements = [
-  {
-    el: 'h1',
-    animation: 'fadeInLeft',
-  },
-  {
-    el: 'h2',
-    animation: 'fadeInLeft',
-  },
-  {
-    el: 'h3',
-    animation: 'fadeInLeft',
-  },
-  {
-    el: 'h4',
-    animation: 'fadeInLeft',
-  },
-  {
-    el: 'h5',
-    animation: 'fadeInLeft',
-  },
-  {
-    el: 'h6',
-    animation: 'fadeInLeft',
-  },
-  {
-    el: '.interrupter',
-    animation: 'fadeInLeft',
-  },
-  {
-    el: '.services-list-card',
-    animation: 'fadeInUp',
-    hasDelay: true
-  },
+  // {
+  //   el: 'h1',
+  //   animation: 'fadeInLeft',
+  // },
+  // {
+  //   el: 'h2',
+  //   animation: 'fadeInLeft',
+  // },
+  // {
+  //   el: 'h3',
+  //   animation: 'fadeInLeft',
+  // },
+  // {
+  //   el: 'h4',
+  //   animation: 'fadeInLeft',
+  // },
+  // {
+  //   el: 'h5',
+  //   animation: 'fadeInLeft',
+  // },
+  // {
+  //   el: 'h6',
+  //   animation: 'fadeInLeft',
+  // },
+  // {
+  //   el: '.interrupter',
+  //   animation: 'fadeInLeft',
+  // },
+  // {
+  //   el: '.services-list-card',
+  //   animation: 'fadeInUp',
+  //   hasDelay: true
+  // },
   // {
   //   el: '.services-list-card__desc',
   //   animation: 'fadeInLeft',
@@ -213,44 +213,44 @@ const animatedElements = [
   //   animation: 'fadeInLeft',
   //   hasDelay: true
   // },
-  {
-    el: '.about-row-desc__text',
-    animation: 'fadeInUp',
-  },
-  {
-    el: '.articles-list-article',
-    animation: 'fadeInUp',
-    hasDelay: true
-  },
-  {
-    el: '.programms-table__row',
-    animation: 'fadeInUp',
-    hasDelay: true
-  },
-  {
-    el: '.articles-list-article__desc',
-    animation: 'fadeInLeft',
-    hasDelay: true
-  },
-  {
-    el: '.newsletter-from',
-    animation: 'fadeInUp',
-  },
-  {
-    el: '.articles-about-list-card',
-    animation: 'fadeInLeft',
-    hasDelay: true
-  },
-  {
-    el: '.bullets-card__badge',
-    animation: 'fadeInUp',
-    hasDelay: true
-  },
-  {
-    el: '.bullets-card__desc',
-    animation: 'fadeInUp',
-    hasDelay: true
-  },
+  // {
+  //   el: '.about-row-desc__text',
+  //   animation: 'fadeInUp',
+  // },
+  // {
+  //   el: '.articles-list-article',
+  //   animation: 'fadeInUp',
+  //   hasDelay: true
+  // },
+  // {
+  //   el: '.programms-table__row',
+  //   animation: 'fadeInUp',
+  //   hasDelay: true
+  // },
+  // {
+  //   el: '.articles-list-article__desc',
+  //   animation: 'fadeInLeft',
+  //   hasDelay: true
+  // },
+  // {
+  //   el: '.newsletter-from',
+  //   animation: 'fadeInUp',
+  // },
+  // {
+  //   el: '.articles-about-list-card',
+  //   animation: 'fadeInLeft',
+  //   hasDelay: true
+  // },
+  // {
+  //   el: '.bullets-card__badge',
+  //   animation: 'fadeInUp',
+  //   hasDelay: true
+  // },
+  // {
+  //   el: '.bullets-card__desc',
+  //   animation: 'fadeInUp',
+  //   hasDelay: true
+  // },
 ]
 
 let delay = 0;
