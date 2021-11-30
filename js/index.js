@@ -7,7 +7,8 @@ let stepsSlider = new Swiper('.steps-slider', {
 		prevEl: '.steps-slider__button-prev',
 	},
 	pagination: {
-		el: '.steps-slider__pagination'
+		el: '.steps-slider__pagination',
+    clickable: true,
 	},
 	spaceBetween: 50,
 });
@@ -70,10 +71,10 @@ if (anchors != undefined && anchors != null) {
         currentPageOffset++;
         setTimeout(() => {
           document.querySelector('html').scrollTop++
-        }, 65)
+        }, 65);
       }
     });
-  })
+  });
 }
 // /Smooth anchors
 
@@ -116,7 +117,8 @@ const scrollToTopButtons = document.querySelectorAll('.button-scroll-top');
 scrollToTopButtons.forEach(button => {
   button.addEventListener('click', function (event) {
     event.preventDefault();
-    smoothScroll('html', 5000);
+    smoothScroll('html', 0);
+    // smoothScroll('html', 5000);
   })
 })
 
@@ -201,16 +203,16 @@ const animatedElements = [
     animation: 'fadeInUp',
     hasDelay: true
   },
-  {
-    el: '.services-list-card__desc',
-    animation: 'fadeInLeft',
-    hasDelay: true
-  },
-  {
-    el: '.services-list-card__icon',
-    animation: 'fadeInLeft',
-    hasDelay: true
-  },
+  // {
+  //   el: '.services-list-card__desc',
+  //   animation: 'fadeInLeft',
+  //   hasDelay: true
+  // },
+  // {
+  //   el: '.services-list-card__icon',
+  //   animation: 'fadeInLeft',
+  //   hasDelay: true
+  // },
   {
     el: '.about-row-desc__text',
     animation: 'fadeInUp',
@@ -365,6 +367,7 @@ const headerMenuOpenedClass = 'opened'
 // })
 // initMenusHeight()
 
+// Dropdown
 document.addEventListener('click', (event) => {
   const dropdownMenu = event.path[0]
   if (dropdownMenu.classList.value.includes('header-nav-dropdown')) {
@@ -377,9 +380,11 @@ document.addEventListener('click', (event) => {
     headerMenus.forEach(menu => menu.classList.remove(headerMenuOpenedClass))
   }
 })
+// /Dropdown
 
 // /open menu by click
 
+// Animate triangles by appearing on screen
 let triangles = [...document.querySelectorAll('.triangle')];
 let triangleActiveClass = 'triangle--hidden';
 function handleTrianglesAppear(spreadElements) {
@@ -402,3 +407,13 @@ document.addEventListener('scroll', function() {
 setTimeout(() => {
   handleTrianglesAppear(triangles);
 }, 200)
+
+// /Animate triangles by appearing on screen
+
+
+
+poppa({
+  pop: '.popups-success',
+  clickTrigger: '.newsletter__submit',
+  closerType: 'inner'
+})

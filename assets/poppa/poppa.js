@@ -21,6 +21,7 @@ let poppaScrollBlockerClass = 'poppa-block-scrolling';
  */
 
 function openPop( $pop, $onOpen = null ) {
+	// console.log($pop)
 	if ( typeof $pop == 'object' ) {
 		let poppaOverlay = document.querySelector('.' + $pop.classList[0] + '-overlay');
 		poppaOverlay.classList.add(poppaOverlayOpenedClass)
@@ -104,15 +105,19 @@ function closePopCaller($)  {
  * @param {function} $onClose  callback on close
  */
 // function popToggle($pop, $onOpen, $onClose){
-function popToggle($){
-	console.log($)
-	// let poppaOverlay = document.querySelector('.' + $.pop.classList[0] + '-overlay');
-	let poppaOverlay = document.querySelector($.pop + '-overlay');
+function popToggle($) {
+	// console.log($.poppaOverlay)
+	// let poppaOverlay = document.querySelector('.' + $.poppaOverlay.classList[0] + '-overlay');
+	// console.log(
+	// 	window.getComputedStyle($.poppaOverlay)
+	// )
+	let poppaOverlay = document.querySelector($.poppaOverlay)
 	let	isPopHidden = window.getComputedStyle(poppaOverlay).getPropertyValue('visibility') == 'hidden';
 	// let pop = $.pop;
 	if (isPopHidden) {
+		console.log($.pop)
 		openPop( $.pop, $.onOpen)
-			document.querySelector(poppaToScrollBlockElement).classList.add(poppaScrollBlockerClass);
+		document.querySelector(poppaToScrollBlockElement).classList.add(poppaScrollBlockerClass);
 	} else {
 		closePopCaller($);
 		document.querySelector(poppaToScrollBlockElement).classList.remove(poppaScrollBlockerClass)
@@ -165,7 +170,7 @@ function createPopStructure($) {
 	jsPoppaOverlay.appendChild(jsPopAlingner);
 
 	if ($.position) {
-		console.log($.position)
+		// console.log($.position)
 		let vPosition;
 		let hPosition;
 		if ( $.position.includes('top') ) {
@@ -257,6 +262,7 @@ function closeAllPops() {
 function poppa( $ ){
 	let popaData = $;
 	$.poppaOverlay = $.pop + '-overlay';
+	// console.log('poppaOverlay', $.poppaOverlay)
 
 	createPopStructure(popaData);
 
@@ -287,10 +293,12 @@ function poppa( $ ){
 		const opener = [...document.querySelectorAll($.clickTrigger)];
 		opener.map(trigger => {
 			trigger.addEventListener("click", function() {
+				console.log($.poppaOverlay)
 				popToggle({
-					pop: $.pop,
+					pop: pop,
 					onOpen: $.onOpen,
 					onClose: $.onClose,
+					poppaOverlay: $.poppaOverlay,
 				});
 			})
 		});

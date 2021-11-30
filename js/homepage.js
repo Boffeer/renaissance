@@ -56,6 +56,7 @@ const resizeConstructors = [
 		buttons: '.services-slider__buttons',
 		buttonNext: '.services-slider__button-next',
 		buttonPrev: '.services-slider__button-prev',
+		sliderAutoHeight: false,
 		onSlideChange: function(slider, buttons) {
 			let activeIndex = slider.activeIndex;
 			let slides = [...document.querySelector(this.swiper).querySelectorAll('.swiper-slide')];
@@ -84,6 +85,7 @@ const resizeConstructors = [
 		gutter: '.articles-list-article--gutter',
 		variableSlider: articlesSlider,
 		variableMasonry: articlesMasonry,
+		sliderAutoHeight: true,
 	}
 ];
 
@@ -95,7 +97,7 @@ function useCorrectServicesLayout($) {
 	if (window.innerWidth < $.breakpoint) {
 
 		if (servicesSliderEl.querySelector('.swiper-notification') != null) {
-			console.log('removed')
+			// console.log('removed')
 			servicesSliderEl.querySelector('.swiper-notification').remove()
 		}
 		if ($.variableMasonry != undefined) {
@@ -123,9 +125,10 @@ function useCorrectServicesLayout($) {
 				prevEl: $.buttonPrev,
 			},
 			pagination: {
-				el: $.pagination
+				el: $.pagination,
+				clickable: true,
 			},
-			autoHeight: true,
+			autoHeight: $.sliderAutoHeight,
 			spaceBetween: 50,
 			on: {
 				transitionEnd: function() {
@@ -152,7 +155,7 @@ function useCorrectServicesLayout($) {
 		servicesSliderEl.classList.remove('swiper', 'swiper-initialized', 'swiper-horizontal');
 		servicesSliderEl.removeAttribute('style')
 		if (servicesSliderEl.querySelector('.swiper-notification') != null) {
-			console.log('removed')
+			// console.log('removed')
 			servicesSliderEl.querySelector('.swiper-notification').remove()
 		}
 
@@ -201,10 +204,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 		let videoClass = `js_articles__video--${index}`;
 		let playClass = `js_articles__play--${index}`;
+
+		let videoFirstClass = video.classList[0];
+		video.classList.remove(videoFirstClass)
+
 		video.classList.add(videoClass)
+		video.classList.add(videoFirstClass)
 		play.classList.add(playClass)
 
-		console.log(videoClass, playClass)
+		// console.log(videoClass, playClass)
 
 		function onOpenFunction() {
 			let ytVideo = video

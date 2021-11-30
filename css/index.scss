@@ -8,16 +8,6 @@
 	font-display: swap;
 }
 
-// @font-face {
-// 	src:
-// 		url("../fonts/Gerbera-Regular.woff2") format("woff2"),
-// 		url("../fonts/Gerbera-Regular.woff") format("woff");
-// 	font-family: "Gerbera";
-// 	font-weight: 500;
-// 	font-style: normal;
-// 	font-display: swap;
-// }
-
 @font-face {
 	src:
 		url("../fonts/Gerbera-Medium.woff2") format("woff2"),
@@ -339,6 +329,7 @@ body {
 }
 .button__text {
 	margin-bottom: 1px;
+	pointer-events: none;
 }
 
 .input__wrapper {
@@ -1250,6 +1241,26 @@ body {
 	}
 }
 
+.popups-success {
+	max-width: 600px;
+	width: 100%;
+	padding: 50px 25px;
+
+	.poppa__closer {
+		top: 0;
+		right: 0;
+		font-weight: 400;
+		color: var(--c-text-p);
+		&:hover {
+			color: #ff3b30;
+		}
+	}
+}
+.popups-success__title {
+	font-size: 24px;
+	text-align: center;
+	color: var(--c-text-p)
+}
 
 @import "blocks/animations";
 
@@ -1272,3 +1283,5 @@ body {
 @import "blocks/faq";
 
 @import "blocks/backgrounds";
+
+@import "temp";

@@ -49,4 +49,18 @@
             transform: translateY(0px);
   }
 }
+
+@-webkit-keyframes pulse {
+  to {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
+
+@keyframes pulse {
+  to {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
 /*# sourceMappingURL=animations.css.map */

@@ -26,6 +26,7 @@
 }
 
 .services-list-card__icon {
+	pointer-events: none;
 	transition: all 0.3s ease-in-out;
 	transform: translateY(0);
 	animation: loop-translate-y 1.5s infinite alternate;
@@ -39,6 +40,7 @@
 }
 
 .services-list-card__inner {
+	display: block;
 	height: calc(100%);
 	position: relative;
 	padding: 42px 40px 42px 45px;
@@ -143,6 +145,7 @@
 .services-list-card__title {
 	font-size: var(--fz-h3-card);
 	margin-bottom: 12px;
+	color: #fff;
 }
 
 .services-list-card__desc {
@@ -278,7 +281,8 @@
 	}
 
 	.swiper-slider__buttons.services-slider__buttons {
-		bottom: -40px;
+		// bottom: -40px;
+		bottom: -20px;
 		position: absolute;
 		width: auto;
 		top: unset;
@@ -310,6 +314,9 @@
 		right: unset;
 		left: unset;
 		bottom: unset;
+	}
+	.services-list-card {
+		height: 320px;
 	}
 }
 
