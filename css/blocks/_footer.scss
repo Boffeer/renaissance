@@ -12,7 +12,7 @@
 		color: var(--c-primary--hover);
 	}
 	.footer-about--license:hover {
-		border-bottom: 1px solid var(--c-primary--hover);
+		// border-bottom: 1px solid var(--c-primary--hover);
 	}
 }
 
@@ -47,9 +47,9 @@
 .footer-about {
 	max-width: 514px;
 
-	&--license {
-		border-bottom: 1px solid #e1e6f0;
-	}
+	// &--license {
+	// 	border-bottom: 1px solid #e1e6f0;
+	// }
 }
 .footer-about__slogan {
 	font-weight: 400;

@@ -3446,10 +3446,6 @@ body {
   color: var(--c-primary--hover);
 }
 
-.footer .footer-about--license:hover {
-  border-bottom: 1px solid var(--c-primary--hover);
-}
-
 .container--footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3484,10 +3480,6 @@ body {
 
 .footer-about {
   max-width: 514px;
-}
-
-.footer-about--license {
-  border-bottom: 1px solid #e1e6f0;
 }
 
 .footer-about__slogan {
