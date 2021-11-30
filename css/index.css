@@ -1244,6 +1244,10 @@ body {
   }
 }
 
+.popups {
+  display: none;
+}
+
 .popups-success {
   max-width: 600px;
   width: 100%;
@@ -1708,7 +1712,7 @@ body {
 .hero-offer {
   position: relative;
   z-index: 2;
-  max-width: 623px;
+  max-width: 723px;
 }
 
 .hero-offer__title {
@@ -2850,7 +2854,6 @@ body {
 
 .articles-list__wrapper {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: articles;
@@ -4702,8 +4705,45 @@ body {
   }
 }
 
+.services-list-card--invest,
 .header-burger,
+.articles-about,
+.articles-list-article-meta,
 .header-nav {
   display: none;
+}
+
+.articles__inner {
+      grid-template-areas: "title articles articles";
+  -ms-grid-columns: 0.7fr 1.2fr 1fr;
+      grid-template-columns: 0.7fr 1.2fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.skewed-bgs--aritcles.skewed-bgs .skewed-bgs__item--accent {
+  height: 380px;
+}
+
+.skewed-bgs--aritcles.skewed-bgs .skewed-bgs__item--grey {
+  height: 880px;
+}
+
+@media (max-width: 992px) {
+  .skewed-bgs--bottom {
+    top: 2700px;
+  }
+}
+
+@media (max-width: 767px) {
+  .skewed-bgs--bottom {
+    top: 1700px;
+  }
+}
+
+@media (max-width: 576px) {
+  .skewed-bgs--bottom {
+    top: 2700px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
