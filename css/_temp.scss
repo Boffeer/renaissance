@@ -38,3 +38,12 @@
 			top: 2700px;
 	}
 }
+
+@media (min-width: 992px) {
+	.services-list-card:nth-of-type(2) {
+		height: 363px;
+	}
+	.services-list-card:nth-of-type(4) {
+		height: 742px;
+	}
+}
