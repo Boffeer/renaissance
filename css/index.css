@@ -3863,6 +3863,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
 }
 
 .steps-slider-slide__text {
@@ -4595,7 +4597,7 @@ body {
           transform-origin: center center;
   pointer-events: none;
   color: #50287D;
-  font-family: initial;
+  font-family: 'Calibri', sans-serif;
 }
 
 .opened .faq-cards-card-question__closer {
@@ -4668,6 +4670,7 @@ body {
     top: 50%;
     right: 16px;
     font-size: 44px;
+    line-height: 44px;
   }
 }
 

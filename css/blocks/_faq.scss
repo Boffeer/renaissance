@@ -47,7 +47,7 @@
 	transform-origin: center center;
 	pointer-events: none;
 	color: #50287D;
-	font-family: initial;
+	font-family: 'Calibri', sans-serif;
 }
 .opened .faq-cards-card-question__closer {
 	transform: translateY(-50%) rotate(45deg);
@@ -112,6 +112,7 @@
 		top: 50%;
     right: 16px;
 		font-size: 44px;
+		line-height: 44px;
 	}
 }
 
