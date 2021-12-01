@@ -2,6 +2,7 @@ let lazyLoadInstance = new LazyLoad();
 
 // STEPS
 let stepsSlider = new Swiper('.steps-slider', {
+  autoHeight: true,
 	navigation: {
 		nextEl: '.steps-slider__button-next',
 		prevEl: '.steps-slider__button-prev',

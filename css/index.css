@@ -4053,6 +4053,15 @@ body {
   }
 }
 
+.steps-slider .steps-slider__pagination {
+  display: inline-block;
+  position: static;
+}
+
+.steps-slider-slide__text {
+  padding-bottom: 30px;
+}
+
 .programms {
   padding-top: 70px;
   padding-bottom: 55px;
